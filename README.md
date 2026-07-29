@@ -13,7 +13,10 @@ lives in a separate repository:
 
 - **Stage 1 — clinical pretraining:** https://github.com/dooraemee0/rf-bladder
 - **Stage 2 — adaptation (this repo):** clinical → wearable, DER++ and variants
-- **Trained checkpoints (12):** archived on Zenodo — DOI: `TODO_ZENODO_DOI`
+- **Trained checkpoints (12):** GitHub Release
+  [`v1.0.0`](https://github.com/dooraemee0/rf-bladder-adaptation/releases/tag/v1.0.0)
+  (`rf-bladder-adaptation-checkpoints.zip`, SHA256
+  `6a1bc47398f893c24a629f645f64ad9075f05a2d7ae27042694cb55ce8502020`)
 
 The two stages connect through the Stage-1 checkpoint: every Stage-2 run starts
 from `rf-bladder/checkpoints/best_model.pt` and evaluates clinical retention on
@@ -114,9 +117,15 @@ checkpoints/final/{der++,cfp_derpp,r_derpp}/seed{1,2,3,42}/model.pt   # 12 files
 ```
 
 Each is a pure `state_dict` (loadable with `weights_only=True`), saved by
-`ablation_A_adaptation.py`. Because of their size they are also mirrored on
-Zenodo (DOI above); if the copies in this repo are hosted via a release asset or
-LFS, follow the download note there.
+`ablation_A_adaptation.py`. They are not committed to the repository; download
+them from the GitHub Release above and unzip into place:
+
+```bash
+# from the repo root, after downloading the release asset
+unzip rf-bladder-adaptation-checkpoints.zip   # creates checkpoints/final/...
+sha256sum rf-bladder-adaptation-checkpoints.zip
+# 6a1bc47398f893c24a629f645f64ad9075f05a2d7ae27042694cb55ce8502020
+```
 
 ## Data availability
 
@@ -141,5 +150,5 @@ clinical dataset.
 ## License
 
 Code is released under the MIT License (see `LICENSE`). Trained checkpoints and
-any data are subject to separate terms stated on the Zenodo record and in the
+any data are subject to separate terms stated with the release asset and in the
 Data availability section above.
