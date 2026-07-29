@@ -1,0 +1,18 @@
+# Table 3 -- R-DER++ (relation-preserving extension).
+# Reproduces: results_final_multiseed_valsplit/r_derpp/seed{1,2,3,42}
+# Source script: run_baselines_gpu1.sh (all values are argparse defaults)
+#
+# Inherits _base.yaml. Adds pairwise rank/relation terms on top of DER++ so
+# that the ordering of volumes within a clinical batch is preserved.
+
+strategy: r_derpp
+
+der_alpha: 0.5
+der_beta: 0.5
+
+# relation preservation
+rank_lambda: 0.05
+relation_lambda: 0.05
+pair_min_gap: 50.0    # min volume gap (mL) for a valid ordered pair
+rank_margin: 10.0
+grad_clip: 5.0        # fixed in strategies.py for this strategy

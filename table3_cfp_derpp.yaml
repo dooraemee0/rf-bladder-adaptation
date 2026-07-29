@@ -1,0 +1,19 @@
+# Table 3 -- CFP-DER++ (channel-wise feature-preserving extension).
+# Reproduces: results_final_multiseed_valsplit/cfp_derpp/seed{1,2,3,42}
+# Source script: run_final_gpu{0,1}.sh
+#
+# Inherits _base.yaml. Adds a per-channel feature-preservation term on top of
+# DER++: the seven encoder outputs of the adapting model are matched to those
+# of the frozen model under a cosine constraint that is relaxed during training.
+
+strategy: cfp_derpp
+
+der_alpha: 0.5
+der_beta: 0.5
+
+# channel-wise feature preservation
+feature_lambda: 0.05
+feature_loss_mode: cosine
+feature_schedule: cosine_decay   # constraint strength decays over training
+feature_min_ratio: 0.1           # floor of the decay schedule
+feature_grad_clip: 5.0

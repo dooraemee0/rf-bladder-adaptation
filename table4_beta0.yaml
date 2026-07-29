@@ -1,0 +1,10 @@
+# Table 4 -- DER++ ablation, beta = 0.
+# Removes the ground-truth clinical replay term, keeping only response matching.
+# Source script: run_ab_gpu1.sh
+#
+# Inherits _base.yaml.
+
+strategy: der++
+
+der_alpha: 0.5   # response-matching term retained
+der_beta: 0.0    # ground-truth clinical replay REMOVED

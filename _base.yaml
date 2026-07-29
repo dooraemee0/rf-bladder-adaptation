@@ -1,0 +1,29 @@
+# Common settings shared by all Stage-2 adaptation runs.
+# Values here are hard-coded in the code (strategies.py / ablation_common.py)
+# and are reproduced explicitly so that a run is fully specified by its config.
+#
+# Merge order: a strategy config (e.g. table3_derpp.yaml) is applied on top of
+# this file; keys in the strategy config override keys here.
+
+# --- optimization ---
+epochs: 150
+lr: 1.0e-3
+optimizer: adamw          # torch.optim.AdamW
+weight_decay: 1.0e-3      # strategies.py::_make_opt
+scheduler: cosine         # CosineAnnealingLR(T_max=epochs)
+batch_size: 16            # ablation_common.py::make_loader
+
+# --- loss ---
+loss: huber               # torch.nn.HuberLoss
+huber_delta: 10.0         # applied to both device and clinical terms
+
+# --- replay ---
+clinical_ratio: 1.0       # fraction of clinical replay used per step
+
+# --- reproducibility ---
+# The paper reports mean +/- std over these four seeds.
+seeds: [1, 2, 3, 42]
+
+# --- data (set via environment, not committed) ---
+# DATA_ROOT, CLINICAL_CKPT, TEST_IDX_PATH are read from the environment.
+# See .env.example. Do not hard-code dataset or checkpoint paths here.

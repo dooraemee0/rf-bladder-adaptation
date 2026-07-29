@@ -1,0 +1,12 @@
+# Table 3 -- DER++ (adopted final method).
+# Reproduces: results_final_multiseed_valsplit/der++/seed{1,2,3,42}
+# Source script: run_final_gpu{0,1}.sh
+#
+# Inherits _base.yaml (epochs, lr, optimizer, huber, seeds, ...).
+
+strategy: der++
+
+# Dark Experience Replay++ objective:
+#   L = L_device + der_alpha * ||f(x_clin) - z_old||^2 + der_beta * L_reg(f(x_clin), y_clin)
+der_alpha: 0.5   # response-matching term (matches frozen pretrained outputs)
+der_beta: 0.5    # ground-truth clinical replay term

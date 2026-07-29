@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+_prep_cache*/
+logs/
+nohup_*.out
+*.csv
+*.png
+.env
+checkpoints/
