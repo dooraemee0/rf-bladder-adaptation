@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "release": {
+    "tag": "v1.0.0",
+    "asset_name": "rf-bladder-adaptation-checkpoints.zip",
+    "asset_size_bytes": 289728689,
+    "asset_sha256": "6a1bc47398f893c24a629f645f64ad9075f05a2d7ae27042694cb55ce8502020",
+    "download_url": "https://github.com/dooraemee0/rf-bladder-adaptation/releases/download/v1.0.0/rf-bladder-adaptation-checkpoints.zip"
+  },
+  "checkpoints": {
+    "checkpoints/final/cfp_derpp/seed1/model.pt": {"size_bytes": 26049754, "sha256": "e66ff192926258d500f22695fde6ff234818fb0fa7ea37ea0922b404731b059d"},
+    "checkpoints/final/cfp_derpp/seed2/model.pt": {"size_bytes": 26049754, "sha256": "ff2a9785400cb782894ab824a8e41780d4841da0423089cc8aa45bece95714cb"},
+    "checkpoints/final/cfp_derpp/seed3/model.pt": {"size_bytes": 26049754, "sha256": "6084c7ddb18bf679769cc05ce6b1e261b30db7cb5641a1895c70390212e17d4d"},
+    "checkpoints/final/cfp_derpp/seed42/model.pt": {"size_bytes": 26049754, "sha256": "154f3ba3ca911ddb1d837586f6229e0ce9462acc00a8c20bdf8861072a6c7e0a"},
+    "checkpoints/final/der++/seed1/model.pt": {"size_bytes": 26049754, "sha256": "0a5924530dd840435603598e682847f33cd62c9770a6be8a74babee736efb4b8"},
+    "checkpoints/final/der++/seed2/model.pt": {"size_bytes": 26049754, "sha256": "c87dc4211bec14e01b31a45ff4d70a3068668b516b35e9561dced9406a8af685"},
+    "checkpoints/final/der++/seed3/model.pt": {"size_bytes": 26049754, "sha256": "ba9e8bd59b8eeb14ea09cbb2fbd613fad4490699064c25e8d882681d04ce2572"},
+    "checkpoints/final/der++/seed42/model.pt": {"size_bytes": 26049754, "sha256": "773a811137b7e3e73656e111d3ddd4b428591b2a79ac2c3e5d367750b4c821bc"},
+    "checkpoints/final/r_derpp/seed1/model.pt": {"size_bytes": 26049754, "sha256": "11a93ac7423d9f4ae920e191b4310007ff6baf9ff7acfc464a49f351237f5236"},
+    "checkpoints/final/r_derpp/seed2/model.pt": {"size_bytes": 26049754, "sha256": "fd8c490236b03ed401a87f7972926c116bf24e8d5937e4bb4241ea30da4db0af"},
+    "checkpoints/final/r_derpp/seed3/model.pt": {"size_bytes": 26049754, "sha256": "1534822af7d1a3047729be7c1743861fed3e6101a569ab81f34b21a0361f9bfd"},
+    "checkpoints/final/r_derpp/seed42/model.pt": {"size_bytes": 26049754, "sha256": "df5a98f5dc88c040954cf7d5370ce6b760d12a4f89f40c2d5a4beb02b563384d"}
+  }
+}

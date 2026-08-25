@@ -1,12 +1,10 @@
 # Bladder Volume Estimation from RF Ultrasound — Stage 2: Clinical-to-Wearable Adaptation
 
-Code and trained checkpoints for the wearable-adaptation stage of our work on
-bladder volume estimation directly from raw radio-frequency (RF) ultrasound.
-A clinically pretrained per-channel RF regression model is adapted to a wearable
-device using only a few discrete phantom volumes, while **preserving the
-continuous volume relationship learned from clinical data** — which is what makes
-the device-side predictions a genuine regression rather than memorization of the
-handful of available phantom states.
+Code, experiment wrappers, and trained checkpoints for the wearable-adaptation
+stage of our work on bladder-volume estimation directly from radio-frequency
+(RF) ultrasound. A clinically pretrained per-channel RF regression model is
+adapted to wearable phantom acquisitions with three reference volumes. Device
+performance and clinical-retention performance are reported separately.
 
 This repository covers **Stage 2 (adaptation)**. Stage 1 (clinical pretraining)
 lives in a separate repository:
@@ -18,9 +16,9 @@ lives in a separate repository:
   (`rf-bladder-adaptation-checkpoints.zip`, SHA256
   `6a1bc47398f893c24a629f645f64ad9075f05a2d7ae27042694cb55ce8502020`)
 
-The two stages connect through the Stage-1 checkpoint: every Stage-2 run starts
-from `rf-bladder/checkpoints/best_model.pt` and evaluates clinical retention on
-the held-out indices in `rf-bladder/checkpoints/test_idx.pt`.
+The two stages connect through the released Stage-1 checkpoint: every reported
+Stage-2 run starts from `rf-bladder/checkpoints/best_model.pt` and uses the
+recorded clinical evaluation indices in `rf-bladder/checkpoints/test_idx.pt`.
 
 ## Method in one paragraph
 
@@ -53,8 +51,11 @@ validation-controlled protocol, and against two DER++ variants introduced here
 ├── aggregate_summary.py        # merge metrics.json across runs → mean ± seed std
 ├── summarize_ab_ablation.py    # Table 4 (alpha=0 / beta=0) summary
 ├── summarize_lambda_sweep.py   # lambda-sweep summary
-├── configs/                    # hyperparameters for each reported result
+├── _base.yaml                  # human-readable common experiment settings
+├── table3_*.yaml               # human-readable main-strategy settings
+├── table4_*.yaml               # human-readable DER++ ablation settings
 ├── scripts/                    # runnable .sh wrappers (paths via env vars)
+├── release/checkpoint_manifest.json  # release ZIP/model hashes and byte sizes
 ├── checkpoints/final/          # 12 released checkpoints (der++/cfp_derpp/r_derpp × 4 seeds)
 ├── requirements.txt
 ├── .env.example
@@ -74,9 +75,12 @@ The scripts fail fast if any is unset.
 
 ## Reproducing the paper
 
-Configs in `configs/` fully specify each result; `_base.yaml` holds the settings
-that are otherwise hard-coded (AdamW, weight decay 1e-3, cosine schedule, batch
-size 16, Huber loss with δ = 10, 150 epochs, seeds 1/2/3/42).
+The root-level YAML files record the settings associated with each result.
+Executable arguments are supplied by the shell wrappers in `scripts/`; common
+optimizer and loader settings are implemented in `strategies.py` and
+`ablation_common.py`. `_base.yaml` records AdamW, weight decay 1e-3, cosine
+schedule, batch size 16, Huber loss with δ = 10, 150 epochs, and seeds
+1/2/3/42 in one place for inspection.
 
 **Table 3 — main comparison.** Adapt from the Stage-1 checkpoint with each
 strategy across four seeds:
@@ -123,9 +127,17 @@ them from the GitHub Release above and unzip into place:
 ```bash
 # from the repo root, after downloading the release asset
 unzip rf-bladder-adaptation-checkpoints.zip   # creates checkpoints/final/...
-sha256sum rf-bladder-adaptation-checkpoints.zip
-# 6a1bc47398f893c24a629f645f64ad9075f05a2d7ae27042694cb55ce8502020
+python scripts/verify_released_checkpoints.py \
+  --zip rf-bladder-adaptation-checkpoints.zip
+unzip rf-bladder-adaptation-checkpoints.zip
+python scripts/verify_released_checkpoints.py \
+  --checkpoint-root checkpoints/final
 ```
+
+The verifier uses only the Python standard library. It checks the release ZIP
+hash and size as well as the SHA-256 hash and byte size of every extracted model.
+The expected release ZIP SHA-256 is
+`6a1bc47398f893c24a629f645f64ad9075f05a2d7ae27042694cb55ce8502020`.
 
 ## Data availability
 
@@ -133,8 +145,10 @@ Clinical RF data are **not publicly available** owing to patient privacy and IRB
 restrictions (SNUH IRB No. H-2107-024-1233). The code references clinical file
 and column conventions (e.g. `Z_volume_selection.csv`, `Upright_H`/`Upright_S`)
 but contains no patient data. Benchtop phantom procedures are described in the
-paper; the released checkpoints allow evaluation without access to the raw
-clinical dataset.
+paper. Re-evaluating the checkpoints or retraining the models requires the RF
+data under the stated data-use conditions; the public release permits the code,
+configuration, and model artifacts to be inspected and hash-verified without
+those data.
 
 ## Citation
 
