@@ -1,0 +1,141 @@
+{
+  "scope": "Process memory point observations in a separate instrumentation run",
+  "peak_memory_measured": false,
+  "continuous_sampling_used": false,
+  "units_for_pss_and_memory_stats": "kB",
+  "model_file_size_bytes": 6651648,
+  "observations": [
+    {
+      "stage": "baseline_before_model",
+      "elapsed_realtime_ns": 353381030128393,
+      "total_pss_kb": 14736,
+      "dalvik_pss_kb": 586,
+      "native_pss_kb": 4374,
+      "other_pss_kb": 9694,
+      "runtime_java_heap_used_bytes": 1222024,
+      "runtime_java_heap_committed_bytes": 7480712,
+      "native_heap_allocated_bytes": 5175864,
+      "memory_stats": {
+        "summary.java-heap": "1244",
+        "summary.native-heap": "4348",
+        "summary.code": "7032",
+        "summary.stack": "32",
+        "summary.graphics": "0",
+        "summary.private-other": "872",
+        "summary.system": "1208",
+        "summary.total-pss": "14736",
+        "summary.total-swap": "9896"
+      }
+    },
+    {
+      "stage": "after_onnx_session_creation",
+      "elapsed_realtime_ns": 353381317753585,
+      "total_pss_kb": 59686,
+      "dalvik_pss_kb": 13606,
+      "native_pss_kb": 21544,
+      "other_pss_kb": 24457,
+      "runtime_java_heap_used_bytes": 14563304,
+      "runtime_java_heap_committed_bytes": 15724495,
+      "native_heap_allocated_bytes": 23673368,
+      "memory_stats": {
+        "summary.java-heap": "14276",
+        "summary.native-heap": "21508",
+        "summary.code": "21292",
+        "summary.stack": "32",
+        "summary.graphics": "0",
+        "summary.private-other": "1068",
+        "summary.system": "1510",
+        "summary.total-pss": "59686",
+        "summary.total-swap": "9632"
+      }
+    },
+    {
+      "stage": "after_raw_rf_buffer_loading",
+      "elapsed_realtime_ns": 353381375879008,
+      "total_pss_kb": 61776,
+      "dalvik_pss_kb": 15361,
+      "native_pss_kb": 21612,
+      "other_pss_kb": 24724,
+      "runtime_java_heap_used_bytes": 1949144,
+      "runtime_java_heap_committed_bytes": 8224216,
+      "native_heap_allocated_bytes": 23847272,
+      "memory_stats": {
+        "summary.java-heap": "16052",
+        "summary.native-heap": "21576",
+        "summary.code": "21484",
+        "summary.stack": "32",
+        "summary.graphics": "0",
+        "summary.private-other": "1088",
+        "summary.system": "1544",
+        "summary.total-pss": "61776",
+        "summary.total-swap": "9608"
+      }
+    },
+    {
+      "stage": "after_preprocessing_point_observation",
+      "elapsed_realtime_ns": 353381512016585,
+      "total_pss_kb": 49454,
+      "dalvik_pss_kb": 2973,
+      "native_pss_kb": 21620,
+      "other_pss_kb": 24782,
+      "runtime_java_heap_used_bytes": 3653080,
+      "runtime_java_heap_committed_bytes": 8224216,
+      "native_heap_allocated_bytes": 23860920,
+      "memory_stats": {
+        "summary.java-heap": "3668",
+        "summary.native-heap": "21584",
+        "summary.code": "21488",
+        "summary.stack": "32",
+        "summary.graphics": "0",
+        "summary.private-other": "1132",
+        "summary.system": "1550",
+        "summary.total-pss": "49454",
+        "summary.total-swap": "9592"
+      }
+    },
+    {
+      "stage": "after_100_repeated_inferences",
+      "elapsed_realtime_ns": 353382641209315,
+      "total_pss_kb": 48269,
+      "dalvik_pss_kb": 4233,
+      "native_pss_kb": 18884,
+      "other_pss_kb": 25073,
+      "runtime_java_heap_used_bytes": 4941288,
+      "runtime_java_heap_committed_bytes": 8224216,
+      "native_heap_allocated_bytes": 23743960,
+      "memory_stats": {
+        "summary.java-heap": "4940",
+        "summary.native-heap": "18848",
+        "summary.code": "21744",
+        "summary.stack": "32",
+        "summary.graphics": "0",
+        "summary.private-other": "1152",
+        "summary.system": "1553",
+        "summary.total-pss": "48269",
+        "summary.total-swap": "9588"
+      }
+    },
+    {
+      "stage": "after_session_close_and_gc",
+      "elapsed_realtime_ns": 353382960169815,
+      "total_pss_kb": 45753,
+      "dalvik_pss_kb": 1729,
+      "native_pss_kb": 18884,
+      "other_pss_kb": 25061,
+      "runtime_java_heap_used_bytes": 1257376,
+      "runtime_java_heap_committed_bytes": 7516064,
+      "native_heap_allocated_bytes": 11150368,
+      "memory_stats": {
+        "summary.java-heap": "2436",
+        "summary.native-heap": "18848",
+        "summary.code": "21744",
+        "summary.stack": "32",
+        "summary.graphics": "0",
+        "summary.private-other": "1140",
+        "summary.system": "1553",
+        "summary.total-pss": "45753",
+        "summary.total-swap": "9588"
+      }
+    }
+  ]
+}

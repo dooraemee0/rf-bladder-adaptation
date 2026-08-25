@@ -1,0 +1,10 @@
+{
+  "abi": "arm64-v8a",
+  "android_api": 28,
+  "android_version": "9",
+  "hardware_platform": "samsungexynos8895 / exynos5",
+  "manufacturer": "samsung",
+  "model": "SM-G955N",
+  "ram_bytes": 5965942784,
+  "unique_device_identifiers_included": false
+}

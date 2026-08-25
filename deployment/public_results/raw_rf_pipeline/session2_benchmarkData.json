@@ -1,0 +1,207 @@
+{
+    "context": {
+        "build": {
+            "brand": "samsung",
+            "device": "dream2lteks",
+            "fingerprint": "samsung/dream2lteks/dream2lteks:9/PPR1.180610.011/G955NKSU5DVG2:user/release-keys",
+            "id": "PPR1.180610.011",
+            "model": "SM-G955N",
+            "type": "user",
+            "version": {
+                "codename": "REL",
+                "sdk": 28
+            }
+        },
+        "cpuCoreCount": 8,
+        "cpuLocked": false,
+        "cpuMaxFreqHz": 2314000000,
+        "memTotalBytes": 5965942784,
+        "sustainedPerformanceModeEnabled": true,
+        "artMainlineVersion": -1,
+        "osCodenameAbbreviated": "P",
+        "compilationMode": "speed-profile",
+        "payload": {}
+    },
+    "benchmarks": [
+        {
+            "name": "sixChannelRawRfToModelTensor",
+            "params": {},
+            "className": "org.dgist.bladderbenchmark.microbenchmark.RawRfPreprocessingBenchmark",
+            "totalRunTimeNs": 12935522183,
+            "metrics": {
+                "timeNs": {
+                    "minimum": 1.26627695E7,
+                    "maximum": 1.8599269E7,
+                    "median": 1.4277096E7,
+                    "coefficientOfVariation": 0.1167303734949494,
+                    "runs": [
+                        1.29851155E7,
+                        1.4417327E7,
+                        1.51352695E7,
+                        1.29533655E7,
+                        1.7182269E7,
+                        1.2873731E7,
+                        1.42703265E7,
+                        1.57385385E7,
+                        1.29875195E7,
+                        1.6869327E7,
+                        1.2905192E7,
+                        1.43795385E7,
+                        1.5867981E7,
+                        1.28538655E7,
+                        1.6983673E7,
+                        1.29674035E7,
+                        1.4056077E7,
+                        1.56772885E7,
+                        1.30784035E7,
+                        1.7240827E7,
+                        1.28526925E7,
+                        1.42345575E7,
+                        1.4371212E7,
+                        1.53007885E7,
+                        1.31500575E7,
+                        1.3996E7,
+                        1.74699615E7,
+                        1.26627695E7,
+                        1.7669577E7,
+                        1.28366155E7,
+                        1.45365E7,
+                        1.65207695E7,
+                        1.29012885E7,
+                        1.7238846E7,
+                        1.2866096E7,
+                        1.433675E7,
+                        1.53499615E7,
+                        1.29627115E7,
+                        1.8599269E7,
+                        1.28969615E7,
+                        1.42018845E7,
+                        1.5369327E7,
+                        1.2879981E7,
+                        1.48052885E7,
+                        1.4080769E7,
+                        1.39676925E7,
+                        1.8352769E7,
+                        1.2877942E7,
+                        1.45735E7,
+                        1.42838655E7
+                    ]
+                },
+                "allocationCount": {
+                    "minimum": 109.0,
+                    "maximum": 113.0,
+                    "median": 110.5,
+                    "coefficientOfVariation": 0.014814698581337068,
+                    "runs": [
+                        113.0,
+                        109.0,
+                        110.5,
+                        109.0,
+                        110.5
+                    ]
+                }
+            },
+            "sampledMetrics": {},
+            "warmupIterations": 544,
+            "repeatIterations": 2,
+            "thermalThrottleSleepSeconds": 0,
+            "profilerOutputs": [
+                {
+                    "type": "PerfettoTrace",
+                    "label": "Trace",
+                    "filename": "RawRfPreprocessingBenchmark_sixChannelRawRfToModelTensor_2026-08-17-09-02-33.perfetto-trace"
+                }
+            ]
+        },
+        {
+            "name": "sixChannelRawRfToScalarVolume",
+            "params": {},
+            "className": "org.dgist.bladderbenchmark.microbenchmark.RawRfToVolumeBenchmark",
+            "totalRunTimeNs": 15289810450,
+            "metrics": {
+                "timeNs": {
+                    "minimum": 3.72382305E7,
+                    "maximum": 4.4269942E7,
+                    "median": 3.92018845E7,
+                    "coefficientOfVariation": 0.030537546200483663,
+                    "runs": [
+                        3.91751345E7,
+                        3.78440195E7,
+                        3.9321423E7,
+                        3.7653346E7,
+                        3.9390019E7,
+                        3.7603942E7,
+                        3.94154425E7,
+                        3.8270308E7,
+                        3.9498096E7,
+                        3.7685731E7,
+                        3.94683075E7,
+                        3.7635904E7,
+                        3.9460846E7,
+                        3.76213655E7,
+                        3.95015E7,
+                        3.76659425E7,
+                        3.93639805E7,
+                        3.82188655E7,
+                        3.94141345E7,
+                        3.772825E7,
+                        3.93844425E7,
+                        3.77258845E7,
+                        3.95928655E7,
+                        3.7708673E7,
+                        3.95211535E7,
+                        3.76774425E7,
+                        3.92323845E7,
+                        3.7669596E7,
+                        3.96029615E7,
+                        3.7705077E7,
+                        3.9550096E7,
+                        3.72382305E7,
+                        3.93737305E7,
+                        3.7716654E7,
+                        3.9567904E7,
+                        3.7617808E7,
+                        3.9375327E7,
+                        3.76525385E7,
+                        3.93481155E7,
+                        3.7927865E7,
+                        3.92286345E7,
+                        3.7647462E7,
+                        3.94148845E7,
+                        4.4269942E7,
+                        3.94442695E7,
+                        3.7647173E7,
+                        3.9277019E7,
+                        3.76561535E7,
+                        3.96105965E7,
+                        3.77115385E7
+                    ]
+                },
+                "allocationCount": {
+                    "minimum": 154.0,
+                    "maximum": 158.0,
+                    "median": 155.5,
+                    "coefficientOfVariation": 0.00945983399855845,
+                    "runs": [
+                        158.0,
+                        154.0,
+                        155.5,
+                        156.5,
+                        155.5
+                    ]
+                }
+            },
+            "sampledMetrics": {},
+            "warmupIterations": 207,
+            "repeatIterations": 2,
+            "thermalThrottleSleepSeconds": 0,
+            "profilerOutputs": [
+                {
+                    "type": "PerfettoTrace",
+                    "label": "Trace",
+                    "filename": "RawRfToVolumeBenchmark_sixChannelRawRfToScalarVolume_2026-08-17-09-02-49.perfetto-trace"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,471 @@
+{
+  "status": "complete",
+  "expected_n": 60,
+  "compared_n": 60,
+  "missing_sample_ids": [],
+  "extra_sample_ids": [],
+  "duplicate_sample_ids": [],
+  "nonfinite_sample_ids": [],
+  "android_vs_desktop": {
+    "max_absolute_difference_ml": 4.8876953258059075e-06,
+    "mean_absolute_difference_ml": 2.3284586591879967e-06,
+    "median_absolute_difference_ml": 2.153320309616902e-06,
+    "exact_float_value_matches": 0
+  },
+  "desktop_8bit": {
+    "n": 60,
+    "mae_ml": 43.239894739786784,
+    "rmse_ml": 56.81227818455957,
+    "r2": 0.6942240571297044,
+    "accuracy_within_50ml_pct": 65.0,
+    "alarm_200ml_accuracy_pct": 90.0,
+    "alarm_200ml_precision": 0.85,
+    "alarm_200ml_recall": 0.85,
+    "alarm_200ml_f1": 0.85,
+    "alarm_confusion": {
+      "tp": 17,
+      "tn": 37,
+      "fp": 3,
+      "fn": 3
+    }
+  },
+  "android_8bit": {
+    "n": 60,
+    "mae_ml": 43.23989421666667,
+    "rmse_ml": 56.8122777927361,
+    "r2": 0.6942240613474613,
+    "accuracy_within_50ml_pct": 65.0,
+    "alarm_200ml_accuracy_pct": 90.0,
+    "alarm_200ml_precision": 0.85,
+    "alarm_200ml_recall": 0.85,
+    "alarm_200ml_f1": 0.85,
+    "alarm_confusion": {
+      "tp": 17,
+      "tn": 37,
+      "fp": 3,
+      "fn": 3
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "50_84.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 49.28866195678711,
+      "android_8bit_ml": 49.288662,
+      "difference_ml": 4.3212892819610715e-08
+    },
+    {
+      "sample_id": "50_57.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 46.10874938964844,
+      "android_8bit_ml": 46.10875,
+      "difference_ml": 6.103515630684342e-07
+    },
+    {
+      "sample_id": "50_72.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 76.31793212890625,
+      "android_8bit_ml": 76.31793,
+      "difference_ml": -2.128906245957296e-06
+    },
+    {
+      "sample_id": "50_5.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 96.98737335205078,
+      "android_8bit_ml": 96.98737,
+      "difference_ml": -3.3520507827233814e-06
+    },
+    {
+      "sample_id": "50_49.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 181.2550811767578,
+      "android_8bit_ml": 181.25508,
+      "difference_ml": -1.1767578200760909e-06
+    },
+    {
+      "sample_id": "50_44.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 106.52710723876953,
+      "android_8bit_ml": 106.52711,
+      "difference_ml": 2.761230462056119e-06
+    },
+    {
+      "sample_id": "50_29.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 108.1170654296875,
+      "android_8bit_ml": 108.117065,
+      "difference_ml": -4.2968750335603545e-07
+    },
+    {
+      "sample_id": "50_81.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 55.64849090576172,
+      "android_8bit_ml": 55.64849,
+      "difference_ml": -9.05761716296638e-07
+    },
+    {
+      "sample_id": "50_18.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 84.26771545410156,
+      "android_8bit_ml": 84.267715,
+      "difference_ml": -4.541015670156412e-07
+    },
+    {
+      "sample_id": "50_1.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 109.70702362060547,
+      "android_8bit_ml": 109.70702,
+      "difference_ml": -3.62060546876819e-06
+    },
+    {
+      "sample_id": "50_25.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 147.86599731445312,
+      "android_8bit_ml": 147.866,
+      "difference_ml": 2.685546888869794e-06
+    },
+    {
+      "sample_id": "50_36.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 135.14633178710938,
+      "android_8bit_ml": 135.14633,
+      "difference_ml": -1.7871093689336703e-06
+    },
+    {
+      "sample_id": "50_75.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 39.74892044067383,
+      "android_8bit_ml": 39.74892,
+      "difference_ml": -4.4067382987122983e-07
+    },
+    {
+      "sample_id": "50_39.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 146.27603149414062,
+      "android_8bit_ml": 146.27603,
+      "difference_ml": -1.4941406334401108e-06
+    },
+    {
+      "sample_id": "50_90.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 60.41836166381836,
+      "android_8bit_ml": 60.41836,
+      "difference_ml": -1.6638183595318878e-06
+    },
+    {
+      "sample_id": "50_12.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 81.08779907226562,
+      "android_8bit_ml": 81.0878,
+      "difference_ml": 9.277343764324542e-07
+    },
+    {
+      "sample_id": "50_78.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 46.10874938964844,
+      "android_8bit_ml": 46.10875,
+      "difference_ml": 6.103515630684342e-07
+    },
+    {
+      "sample_id": "50_79.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 39.74892044067383,
+      "android_8bit_ml": 39.74892,
+      "difference_ml": -4.4067382987122983e-07
+    },
+    {
+      "sample_id": "50_2.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 68.36814880371094,
+      "android_8bit_ml": 68.36815,
+      "difference_ml": 1.1962890624772626e-06
+    },
+    {
+      "sample_id": "50_37.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 116.06684875488281,
+      "android_8bit_ml": 116.06685,
+      "difference_ml": 1.2451171897964741e-06
+    },
+    {
+      "sample_id": "150_84.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 119.24676513671875,
+      "android_8bit_ml": 119.246765,
+      "difference_ml": -1.3671875365162123e-07
+    },
+    {
+      "sample_id": "150_57.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 192.38478088378906,
+      "android_8bit_ml": 192.38478,
+      "difference_ml": -8.837890561608219e-07
+    },
+    {
+      "sample_id": "150_72.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 96.98737335205078,
+      "android_8bit_ml": 96.98737,
+      "difference_ml": -3.3520507827233814e-06
+    },
+    {
+      "sample_id": "150_5.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 163.76556396484375,
+      "android_8bit_ml": 163.76556,
+      "difference_ml": -3.964843756421033e-06
+    },
+    {
+      "sample_id": "150_49.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 176.48521423339844,
+      "android_8bit_ml": 176.48521,
+      "difference_ml": -4.233398442465841e-06
+    },
+    {
+      "sample_id": "150_44.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 189.20486450195312,
+      "android_8bit_ml": 189.20486,
+      "difference_ml": -4.5019531285106495e-06
+    },
+    {
+      "sample_id": "150_29.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 163.76556396484375,
+      "android_8bit_ml": 163.76556,
+      "difference_ml": -3.964843756421033e-06
+    },
+    {
+      "sample_id": "150_81.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 111.29698181152344,
+      "android_8bit_ml": 111.29698,
+      "difference_ml": -1.811523432593276e-06
+    },
+    {
+      "sample_id": "150_18.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 163.76556396484375,
+      "android_8bit_ml": 163.76556,
+      "difference_ml": -3.964843756421033e-06
+    },
+    {
+      "sample_id": "150_1.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 131.96641540527344,
+      "android_8bit_ml": 131.96642,
+      "difference_ml": 4.5947265618906385e-06
+    },
+    {
+      "sample_id": "150_25.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 201.92453002929688,
+      "android_8bit_ml": 201.92453,
+      "difference_ml": -2.9296870707185008e-08
+    },
+    {
+      "sample_id": "150_36.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 168.53543090820312,
+      "android_8bit_ml": 168.53543,
+      "difference_ml": -9.082031340312824e-07
+    },
+    {
+      "sample_id": "150_75.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 222.59396362304688,
+      "android_8bit_ml": 222.59396,
+      "difference_ml": -3.623046865186552e-06
+    },
+    {
+      "sample_id": "150_39.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 143.0961151123047,
+      "android_8bit_ml": 143.09612,
+      "difference_ml": 4.8876953258059075e-06
+    },
+    {
+      "sample_id": "150_90.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 206.69439697265625,
+      "android_8bit_ml": 206.6944,
+      "difference_ml": 3.027343751682565e-06
+    },
+    {
+      "sample_id": "150_12.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 173.3052978515625,
+      "android_8bit_ml": 173.3053,
+      "difference_ml": 2.148437488358468e-06
+    },
+    {
+      "sample_id": "150_78.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 141.50616455078125,
+      "android_8bit_ml": 141.50616,
+      "difference_ml": -4.550781255829861e-06
+    },
+    {
+      "sample_id": "150_79.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 186.0249481201172,
+      "android_8bit_ml": 186.02495,
+      "difference_ml": 1.8798828023136593e-06
+    },
+    {
+      "sample_id": "150_2.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 149.45594787597656,
+      "android_8bit_ml": 149.45595,
+      "difference_ml": 2.1240234389097168e-06
+    },
+    {
+      "sample_id": "150_37.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 101.75724029541016,
+      "android_8bit_ml": 101.75724,
+      "difference_ml": -2.954101603336312e-07
+    },
+    {
+      "sample_id": "300_84.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 314.81146240234375,
+      "android_8bit_ml": 314.81146,
+      "difference_ml": -2.402343739049684e-06
+    },
+    {
+      "sample_id": "300_57.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 267.1127624511719,
+      "android_8bit_ml": 267.11276,
+      "difference_ml": -2.4511718947906047e-06
+    },
+    {
+      "sample_id": "300_72.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 297.3219299316406,
+      "android_8bit_ml": 297.32193,
+      "difference_ml": 6.835938393123797e-08
+    },
+    {
+      "sample_id": "300_5.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 257.5730285644531,
+      "android_8bit_ml": 257.57303,
+      "difference_ml": 1.4355468920257408e-06
+    },
+    {
+      "sample_id": "300_49.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 325.941162109375,
+      "android_8bit_ml": 325.94116,
+      "difference_ml": -2.109374975134415e-06
+    },
+    {
+      "sample_id": "300_44.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 255.98306274414062,
+      "android_8bit_ml": 255.98306,
+      "difference_ml": -2.7441406302841642e-06
+    },
+    {
+      "sample_id": "300_29.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 240.08349609375,
+      "android_8bit_ml": 240.0835,
+      "difference_ml": 3.906249986584953e-06
+    },
+    {
+      "sample_id": "300_81.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 244.85336303710938,
+      "android_8bit_ml": 244.85336,
+      "difference_ml": -3.0371093657777237e-06
+    },
+    {
+      "sample_id": "300_18.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 160.5856475830078,
+      "android_8bit_ml": 160.58565,
+      "difference_ml": 2.4169921744032763e-06
+    },
+    {
+      "sample_id": "300_1.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 213.05421447753906,
+      "android_8bit_ml": 213.05421,
+      "difference_ml": -4.477539050640189e-06
+    },
+    {
+      "sample_id": "300_25.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 232.13369750976562,
+      "android_8bit_ml": 232.1337,
+      "difference_ml": 2.4902343795929482e-06
+    },
+    {
+      "sample_id": "300_36.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 278.2424621582031,
+      "android_8bit_ml": 278.24246,
+      "difference_ml": -2.1582031308753358e-06
+    },
+    {
+      "sample_id": "300_75.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 289.3721618652344,
+      "android_8bit_ml": 289.37216,
+      "difference_ml": -1.8652343669600668e-06
+    },
+    {
+      "sample_id": "300_39.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 262.3428955078125,
+      "android_8bit_ml": 262.3429,
+      "difference_ml": 4.492187485993782e-06
+    },
+    {
+      "sample_id": "300_90.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 233.72366333007812,
+      "android_8bit_ml": 233.72366,
+      "difference_ml": -3.3300781296929927e-06
+    },
+    {
+      "sample_id": "300_12.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 143.0961151123047,
+      "android_8bit_ml": 143.09612,
+      "difference_ml": 4.8876953258059075e-06
+    },
+    {
+      "sample_id": "300_78.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 270.29266357421875,
+      "android_8bit_ml": 270.29266,
+      "difference_ml": -3.5742187378673407e-06
+    },
+    {
+      "sample_id": "300_79.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 306.8616638183594,
+      "android_8bit_ml": 306.86166,
+      "difference_ml": -3.8183594028851076e-06
+    },
+    {
+      "sample_id": "300_2.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 151.0458984375,
+      "android_8bit_ml": 151.0459,
+      "difference_ml": 1.5624999889496394e-06
+    },
+    {
+      "sample_id": "300_37.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 222.59396362304688,
+      "android_8bit_ml": 222.59396,
+      "difference_ml": -3.623046865186552e-06
+    }
+  ]
+}

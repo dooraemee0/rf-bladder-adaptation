@@ -223,12 +223,14 @@ class PreprocessTransformEnhanced:
 # 원본 전처리 클래스 (호환성)
 class PreprocessTransform:
     """Original preprocessing for backward compatibility"""
-    def __init__(self, num_select=None, sigma=1, downsample_rate=10, max_len=220, seed_offset=10):
+    def __init__(self, num_select=None, sigma=1, downsample_rate=10, max_len=220,
+                 seed_offset=10, wearable_envelope=False):
         self.num_select = num_select
         self.sigma = sigma
         self.downsample_rate = downsample_rate
         self.default_max_len = max_len
         self.seed_offset = seed_offset
+        self.wearable_envelope = bool(wearable_envelope)
 
     def resample_to_length(self, data, target_len):
         num_channels, orig_len = data.shape
@@ -243,7 +245,9 @@ class PreprocessTransform:
 
     def __call__(self, data, domain, seed=42):
         if domain == 'device':
-            smoothed = gaussian_filter1d(data, sigma=self.sigma, axis=0)
+            device_data = (np.abs(hilbert(data, axis=1))
+                           if self.wearable_envelope else data)
+            smoothed = gaussian_filter1d(device_data, sigma=self.sigma, axis=0)
         else:
             envelope_data = np.zeros_like(data)
             for ch in range(data.shape[0]):

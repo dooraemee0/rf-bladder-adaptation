@@ -1,0 +1,117 @@
+{
+  "status": "frozen_after_validation_only_android_python_parity",
+  "freeze_date": "2026-08-17",
+  "held_out_raw_rf_used_before_freeze": false,
+  "validation_samples": [
+    "50_30.txt",
+    "150_30.txt",
+    "300_30.txt"
+  ],
+  "validation_final_prediction_max_abs_difference_ml": 0.0,
+  "validation_final_tensor_max_abs_difference": 2.771615982055664e-06,
+  "checkpoint_sha256": "ba9e8bd59b8eeb14ea09cbb2fbd613fad4490699064c25e8d882681d04ce2572",
+  "u8u8_onnx_sha256": "f473b9b8b4a745a9d7579896619af063d2e9cabfaad71fd699728837073a684e",
+  "production_manifest_sha256": "6785e1229fbf0b81a38158f9e2d7d37c4f681ca3bbb7a510b6838a8fb9bf9e1f",
+  "files": [
+    {
+      "path": "settings.gradle.kts",
+      "sha256": "2f5af37d5fc48c9c198903f05b07fe76d1c06d3e1ced5e765ead99a608548f07",
+      "size_bytes": 382
+    },
+    {
+      "path": "build.gradle.kts",
+      "sha256": "066f64d42548e5d0a0ec6dfd928629e3111521db71ad53c9783cfbeaa7a0d0bf",
+      "size_bytes": 259
+    },
+    {
+      "path": "gradle.properties",
+      "sha256": "678c35a27eeda302d6a960484179d118d08fb1edf05c1b40745bc7aed6e88f03",
+      "size_bytes": 136
+    },
+    {
+      "path": "app/build.gradle.kts",
+      "sha256": "aee9c8c399b5f172c78f5de3edd5aca8c89df2d6a132243289e1c4eb3e5d88f1",
+      "size_bytes": 1357
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "sha256": "a42371062a77e85ffa34cce661ec33dc76187fadde0340d0c00251fbf7b3c5f0",
+      "size_bytes": 666
+    },
+    {
+      "path": "app/src/main/assets/model_8bit.onnx",
+      "sha256": "f473b9b8b4a745a9d7579896619af063d2e9cabfaad71fd699728837073a684e",
+      "size_bytes": 6651648
+    },
+    {
+      "path": "app/src/main/assets/local_raw_manifest.json",
+      "sha256": "4ea07069b5aa18c0082b3efdc07272c8045ccac6c40990995a243ec6ea247fb2",
+      "size_bytes": 1457
+    },
+    {
+      "path": "app/src/main/java/org/dgist/bladderbenchmark/LocalInferencePipeline.kt",
+      "sha256": "7391b9df4616f67d15f2d3ccaced5d95845b124da56a911b9fa24a2f36262648",
+      "size_bytes": 1481
+    },
+    {
+      "path": "app/src/main/java/org/dgist/bladderbenchmark/LocalRawRfAssetLoader.kt",
+      "sha256": "372441eb44c6fb664ade83a9b6cd072a9e2cba47d2d766d22795cd372059ce1a",
+      "size_bytes": 2558
+    },
+    {
+      "path": "app/src/main/java/org/dgist/bladderbenchmark/MainActivity.kt",
+      "sha256": "c1c3ac6eacd9d5ec90ebba3be13cc234f1835874d1ecf13ed9fa31a303461747",
+      "size_bytes": 6116
+    },
+    {
+      "path": "app/src/main/java/org/dgist/bladderbenchmark/OrtModelRunner.kt",
+      "sha256": "4b48f6cd8179a104c560c2cbad45e00730fb313d6c98261142cec8d59c48a456",
+      "size_bytes": 2504
+    },
+    {
+      "path": "pipeline/build.gradle.kts",
+      "sha256": "d6031019590018d9a0c037d1879973b486061e5f6798e4ca2bef7bc4465782b6",
+      "size_bytes": 468
+    },
+    {
+      "path": "pipeline/src/main/AndroidManifest.xml",
+      "sha256": "daa0fb1f32ba7ea85a07ef6302ab3d58c3407d7fd2aa03ec132cb9e38e8d9849",
+      "size_bytes": 52
+    },
+    {
+      "path": "pipeline/src/main/java/org/dgist/bladderbenchmark/preprocessing/ButterworthFilter.kt",
+      "sha256": "596434891d2ea4deb9e20d13f7596993ddf378e9f3ab398bfebd043b8edde549",
+      "size_bytes": 3527
+    },
+    {
+      "path": "pipeline/src/main/java/org/dgist/bladderbenchmark/preprocessing/ChannelConstructor.kt",
+      "sha256": "02f5b4c82904e9f08ae9e7dd94e50e6d6b8561d0ed542de198fac6405f8be16f",
+      "size_bytes": 1120
+    },
+    {
+      "path": "pipeline/src/main/java/org/dgist/bladderbenchmark/preprocessing/ChannelStandardizer.kt",
+      "sha256": "235eae6e57bf670f42a6b30c60790ea4c923e1171129f6659d14efb8ebb5efac",
+      "size_bytes": 2079
+    },
+    {
+      "path": "pipeline/src/main/java/org/dgist/bladderbenchmark/preprocessing/GaussianChannelSmoother.kt",
+      "sha256": "629e4dc5502d642799704cb8457119df251af2e7574aa4194376987d0788c185",
+      "size_bytes": 2213
+    },
+    {
+      "path": "pipeline/src/main/java/org/dgist/bladderbenchmark/preprocessing/PreprocessingMetadata.kt",
+      "sha256": "ff9a4ebbd455266c52a26388dc71eff5099e4e93cad560cc54b03ff12770445c",
+      "size_bytes": 974
+    },
+    {
+      "path": "pipeline/src/main/java/org/dgist/bladderbenchmark/preprocessing/TgcProcessor.kt",
+      "sha256": "e336d95e6aa3fdc059af9453a3c9ea5f3b102bde2ba47f708fa78af42e5bb8e1",
+      "size_bytes": 1491
+    },
+    {
+      "path": "pipeline/src/main/java/org/dgist/bladderbenchmark/preprocessing/WearableRfPreprocessor.kt",
+      "sha256": "9a2f97c730513a3dbfd2442699a50d5552570eff578391beac51aa1487cf45c6",
+      "size_bytes": 4541
+    }
+  ]
+}

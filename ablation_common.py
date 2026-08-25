@@ -218,6 +218,7 @@ _EVAL_NUM_WORKERS = int(os.environ.get("ABL_EVAL_NUM_WORKERS", str(_NUM_WORKERS)
 _PIN_MEMORY = os.environ.get("ABL_PIN_MEMORY", "0") == "1"
 _CACHE_DIR = os.environ.get("ABL_CACHE_DIR", "./_prep_cache")
 _USE_CACHE = os.environ.get("ABL_USE_CACHE", "0") == "1"
+_WEARABLE_ENVELOPE = os.environ.get("ABL_WEARABLE_ENVELOPE", "0") == "1"
 
 
 class CachedDataset(torch.utils.data.Dataset):
@@ -265,11 +266,20 @@ def _dataset_tag(df):
     return hashlib.md5(key.encode()).hexdigest()[:16]
 
 
-def make_loader(df, shuffle, bs=16, pad=False):
-    th = PreprocessTransform(num_select=3); ts = PreprocessTransform(num_select=4)
+def _use_wearable_envelope(value=None):
+    return _WEARABLE_ENVELOPE if value is None else bool(value)
+
+
+def make_loader(df, shuffle, bs=16, pad=False, wearable_envelope=None):
+    use_envelope = _use_wearable_envelope(wearable_envelope)
+    th = PreprocessTransform(num_select=3, wearable_envelope=use_envelope)
+    ts = PreprocessTransform(num_select=4, wearable_envelope=use_envelope)
     ds = FolderDatasetUnified(df.reset_index(drop=True), th, ts)
     if _USE_CACHE:
-        ds = CachedDataset(ds, tag=_dataset_tag(df.reset_index(drop=True)))
+        tag = _dataset_tag(df.reset_index(drop=True))
+        if use_envelope:
+            tag += "_wearable_envelope"
+        ds = CachedDataset(ds, tag=tag)
     cf = collate_pad400 if pad else None
     kw = {}
     if _NUM_WORKERS > 0:
@@ -301,7 +311,7 @@ def load_all_data(test_idx):
 # 평가 (RNG-safe: 진입 시 상태 저장, 종료 시 복원)
 # ----------------------------------------------------------------------------
 @torch.no_grad()
-def evaluate(model, df, n_aug=2):
+def evaluate(model, df, n_aug=2, wearable_envelope=None):
     """채널 랜덤 n_aug 평균 평가.
 
     주의: 내부에서 set_seed로 augmentation을 결정적으로 만들지만,
@@ -313,10 +323,13 @@ def evaluate(model, df, n_aug=2):
         model.eval()
         passes = []; gt_ref = None
         eval_nw = _EVAL_NUM_WORKERS
+        use_envelope = _use_wearable_envelope(wearable_envelope)
         for so in range(n_aug):
             set_seed(SEED + so*1000)
-            th = PreprocessTransform(num_select=3, seed_offset=so*1000)
-            ts = PreprocessTransform(num_select=4, seed_offset=so*1000)
+            th = PreprocessTransform(num_select=3, seed_offset=so*1000,
+                                     wearable_envelope=use_envelope)
+            ts = PreprocessTransform(num_select=4, seed_offset=so*1000,
+                                     wearable_envelope=use_envelope)
             ds = FolderDatasetUnified(df.reset_index(drop=True), th, ts)
             dl = DataLoader(ds, batch_size=32, shuffle=False, num_workers=eval_nw,
                             pin_memory=_PIN_MEMORY)

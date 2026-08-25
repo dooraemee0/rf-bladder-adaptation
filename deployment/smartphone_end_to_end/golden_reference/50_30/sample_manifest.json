@@ -1,0 +1,181 @@
+{
+  "sample_id": "50_30.txt",
+  "partition": "wearable validation",
+  "validation_index": 0,
+  "target_ml": 50.0,
+  "raw_source": "<WORKSPACE_ROOT>/\ubc30\ubcc0\ubc30\ub1e8/data/device/50/50_30.txt",
+  "raw_source_sha256": "02044df1c0498ee308317420dbb691c9ea1346167c0393fbd585c18bce4bf45e",
+  "physical_channel_order": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "H_left",
+    "H_right"
+  ],
+  "logical_channel_order": [
+    "H_left",
+    "H_virtual_mean_S2_S3",
+    "H_right",
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ],
+  "stages": {
+    "01_parsed_six_channel_raw": {
+      "file": "01_parsed_six_channel_raw.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "values": 30720,
+      "minimum": -1324.0,
+      "maximum": 1328.0,
+      "mean": 21.726790364583334,
+      "standard_deviation_ddof0": 229.29915043245842,
+      "nonfinite_count": 0,
+      "sha256": "f27204401ae299b53c1d61fa2b73bb43d69e487a6ed8a688543ffac984b8e1c9"
+    },
+    "02_amplitude_scaled": {
+      "file": "02_amplitude_scaled.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "values": 30720,
+      "minimum": -0.7788235545158386,
+      "maximum": 0.7811764478683472,
+      "mean": 0.012780464908041722,
+      "standard_deviation_ddof0": 0.13488185325810453,
+      "nonfinite_count": 0,
+      "sha256": "b00f804f0689b8b412b09408618317e7ed3bdf718e636ee38aef170d35b4ec71"
+    },
+    "03_tgc_output": {
+      "file": "03_tgc_output.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "values": 30720,
+      "minimum": -1.8640726804733276,
+      "maximum": 35.1092529296875,
+      "mean": 2.4484111092783016,
+      "standard_deviation_ddof0": 4.4117762588233775,
+      "nonfinite_count": 0,
+      "sha256": "44f0ff4f892583e8f6ece8961b5ec030cf4340fcf87a9fe5807bcbfcd104f81b"
+    },
+    "04_bandpass_filtered": {
+      "file": "04_bandpass_filtered.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "values": 30720,
+      "minimum": -5.408075332641602,
+      "maximum": 5.309994697570801,
+      "mean": -4.5363867270690565e-05,
+      "standard_deviation_ddof0": 0.5065783170552437,
+      "nonfinite_count": 0,
+      "sha256": "10fcdad8b44a4dd9f4d8554fc1ee7f8d23075bf846b928d58724684868901f89"
+    },
+    "05_clipped_cropped": {
+      "file": "05_clipped_cropped.f32le.bin",
+      "shape": [
+        6,
+        2700
+      ],
+      "dtype": "float32-little-endian",
+      "values": 16200,
+      "minimum": -0.10000000149011612,
+      "maximum": 0.10000000149011612,
+      "mean": 2.451210021848527e-05,
+      "standard_deviation_ddof0": 0.03236520617099456,
+      "nonfinite_count": 0,
+      "sha256": "4935e84ea90ab5cff4a52da72c6969403fb47ed611b83394a9d5cbba7b7da815"
+    },
+    "06_logical_seven_channel": {
+      "file": "06_logical_seven_channel.f32le.bin",
+      "shape": [
+        7,
+        2700
+      ],
+      "dtype": "float32-little-endian",
+      "values": 18900,
+      "minimum": -0.10000000149011612,
+      "maximum": 0.10000000149011612,
+      "mean": 2.4406406844961745e-05,
+      "standard_deviation_ddof0": 0.03174498551354395,
+      "nonfinite_count": 0,
+      "sha256": "5b9680488910f07638e9f6a780b64f455560696d894bc9c3dfb40f78c8376678"
+    },
+    "07_gaussian_smoothed": {
+      "file": "07_gaussian_smoothed.f32le.bin",
+      "shape": [
+        7,
+        2700
+      ],
+      "dtype": "float32-little-endian",
+      "values": 18900,
+      "minimum": -0.10000000149011612,
+      "maximum": 0.10000000149011612,
+      "mean": 2.4406397384189732e-05,
+      "standard_deviation_ddof0": 0.02388748933463247,
+      "nonfinite_count": 0,
+      "sha256": "cf1d7433dfd6f1800f082ca0e8b94e33cf0e0e46b2d8d9367ab68e6bc7985136"
+    },
+    "08_downsampled_220": {
+      "file": "08_downsampled_220.f32le.bin",
+      "shape": [
+        7,
+        220
+      ],
+      "dtype": "float32-little-endian",
+      "values": 1540,
+      "minimum": -0.10000000149011612,
+      "maximum": 0.10000000149011612,
+      "mean": 0.0006715226468529252,
+      "standard_deviation_ddof0": 0.019741352120667695,
+      "nonfinite_count": 0,
+      "sha256": "7fe94a1811dd1d056c289a33b1936fa372b2e7bd3034384b61c91f51ff51e9dc"
+    },
+    "09_standardized": {
+      "file": "09_standardized.f32le.bin",
+      "shape": [
+        7,
+        220
+      ],
+      "dtype": "float32-little-endian",
+      "values": 1540,
+      "minimum": -5.933000564575195,
+      "maximum": 5.6601386070251465,
+      "mean": 1.042871509206953e-10,
+      "standard_deviation_ddof0": 0.9999995008966005,
+      "nonfinite_count": 0,
+      "sha256": "55ae3442683c2b78c32bee4c351868aa4ba75e5e366e733beb10303cd1c7525f"
+    },
+    "10_padded_7x400": {
+      "file": "10_padded_7x400.f32le.bin",
+      "shape": [
+        7,
+        400
+      ],
+      "dtype": "float32-little-endian",
+      "values": 2800,
+      "minimum": -5.933000564575195,
+      "maximum": 5.6601386070251465,
+      "mean": -0.020752582894490064,
+      "standard_deviation_ddof0": 0.7424196946974501,
+      "nonfinite_count": 0,
+      "sha256": "cb65ac8777daaee230d0de2b7a62bccef23195a01dca147689b59a91e0ba0aad"
+    }
+  },
+  "predictions_ml": {
+    "fp32": 127.20201110839844,
+    "u8u8": 124.01663970947266
+  }
+}

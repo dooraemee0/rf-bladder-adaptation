@@ -1,0 +1,1916 @@
+{
+  "report_type": "Android-Python wearable RF preprocessing parity",
+  "partition": "wearable validation only",
+  "held_out_test_used": false,
+  "numeric_tolerance_predeclared": false,
+  "comparison_policy": "Record observed differences; assert only shape and finiteness",
+  "physical_channel_order": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "H_left",
+    "H_right"
+  ],
+  "logical_channel_order": [
+    "H_left",
+    "H_virtual_mean_S2_S3",
+    "H_right",
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ],
+  "samples": [
+    {
+      "sample_id": "50_30.txt",
+      "partition": "wearable validation",
+      "target_ml": 50,
+      "stages": [
+        {
+          "stage": "01_parsed_six_channel_raw",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0,
+          "rmse": 0,
+          "relative_l2_error": 0,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            }
+          ]
+        },
+        {
+          "stage": "02_amplitude_scaled",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0,
+          "rmse": 0,
+          "relative_l2_error": 0,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            }
+          ]
+        },
+        {
+          "stage": "03_tgc_output",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 3.814697265625E-6,
+          "mean_absolute_difference": 8.109978466563916E-8,
+          "rmse": 2.8747380809813466E-7,
+          "relative_l2_error": 5.69746924396132E-8,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 3.814697265625E-6,
+              "mean_absolute_difference": 1.1116724181192694E-7,
+              "rmse": 3.8112006808769247E-7
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 3.814697265625E-6,
+              "mean_absolute_difference": 7.113045512596727E-8,
+              "rmse": 2.463472445471688E-7
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 1.9073486328125E-6,
+              "mean_absolute_difference": 7.240762442961567E-8,
+              "rmse": 2.4783258127466087E-7
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 1.9073486328125E-6,
+              "mean_absolute_difference": 4.892160632152809E-8,
+              "rmse": 1.734496158519415E-7
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 1.9073486328125E-6,
+              "mean_absolute_difference": 6.692557690257672E-8,
+              "rmse": 2.2825153332107482E-7
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 3.814697265625E-6,
+              "mean_absolute_difference": 1.1604620340222027E-7,
+              "rmse": 3.8249594875715974E-7
+            }
+          ]
+        },
+        {
+          "stage": "04_bandpass_filtered",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 1.8775463104248047E-6,
+          "mean_absolute_difference": 6.041198842473191E-8,
+          "rmse": 1.532662082345831E-7,
+          "relative_l2_error": 3.0255185123396713E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 1.8775463104248047E-6,
+              "mean_absolute_difference": 8.09079254149303E-8,
+              "rmse": 2.0172346683466974E-7
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 1.1920928955078125E-6,
+              "mean_absolute_difference": 5.2674466022306635E-8,
+              "rmse": 1.2675613829259527E-7
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 1.1920928955078125E-6,
+              "mean_absolute_difference": 5.388011965479223E-8,
+              "rmse": 1.3121200576305846E-7
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 9.5367431640625E-7,
+              "mean_absolute_difference": 3.760519918794003E-8,
+              "rmse": 9.42380415629204E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 9.98377799987793E-7,
+              "mean_absolute_difference": 4.8875981173424064E-8,
+              "rmse": 1.2073055535558557E-7
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 1.6689300537109375E-6,
+              "mean_absolute_difference": 8.852823909499819E-8,
+              "rmse": 2.085915672373699E-7
+            }
+          ]
+        },
+        {
+          "stage": "05_clipped_cropped",
+          "expected_shape": [
+            6,
+            2700
+          ],
+          "actual_shape": [
+            6,
+            2700
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 9.685754776000977E-8,
+          "mean_absolute_difference": 3.5826611041905123E-9,
+          "rmse": 9.084079310616396E-9,
+          "relative_l2_error": 2.80674149187832E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 9.313225746154785E-8,
+              "mean_absolute_difference": 4.149670105477897E-9,
+              "rmse": 1.0289296490285418E-8
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 8.195638656616211E-8,
+              "mean_absolute_difference": 3.085949860751161E-9,
+              "rmse": 7.979175125188516E-9
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 7.82310962677002E-8,
+              "mean_absolute_difference": 3.0019214978825334E-9,
+              "rmse": 7.689187496233367E-9
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 5.9604644775390625E-8,
+              "mean_absolute_difference": 2.177565879382773E-9,
+              "rmse": 5.333582944380705E-9
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 7.729977369308472E-8,
+              "mean_absolute_difference": 2.8640032791439874E-9,
+              "rmse": 7.274429953985567E-9
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 9.685754776000977E-8,
+              "mean_absolute_difference": 6.216856002504722E-9,
+              "rmse": 1.3605075562220277E-8
+            }
+          ]
+        },
+        {
+          "stage": "06_logical_seven_channel",
+          "expected_shape": [
+            7,
+            2700
+          ],
+          "actual_shape": [
+            7,
+            2700
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 9.685754776000977E-8,
+          "mean_absolute_difference": 3.492846944960961E-9,
+          "rmse": 8.861786678547463E-9,
+          "relative_l2_error": 2.791553978088264E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 7.729977369308472E-8,
+              "mean_absolute_difference": 2.8640032791439874E-9,
+              "rmse": 7.274429953985567E-9
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 8.195638656616211E-8,
+              "mean_absolute_difference": 2.9539619895836543E-9,
+              "rmse": 7.388901164798179E-9
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 9.685754776000977E-8,
+              "mean_absolute_difference": 6.216856002504722E-9,
+              "rmse": 1.3605075562220277E-8
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 9.313225746154785E-8,
+              "mean_absolute_difference": 4.149670105477897E-9,
+              "rmse": 1.0289296490285418E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 8.195638656616211E-8,
+              "mean_absolute_difference": 3.085949860751161E-9,
+              "rmse": 7.979175125188516E-9
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 7.82310962677002E-8,
+              "mean_absolute_difference": 3.0019214978825334E-9,
+              "rmse": 7.689187496233367E-9
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 5.9604644775390625E-8,
+              "mean_absolute_difference": 2.177565879382773E-9,
+              "rmse": 5.333582944380705E-9
+            }
+          ]
+        },
+        {
+          "stage": "07_gaussian_smoothed",
+          "expected_shape": [
+            7,
+            2700
+          ],
+          "actual_shape": [
+            7,
+            2700
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 8.89413058757782E-8,
+          "mean_absolute_difference": 3.361180831604913E-9,
+          "rmse": 8.042397961275521E-9,
+          "relative_l2_error": 3.3667806820607094E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 8.009374141693115E-8,
+              "mean_absolute_difference": 3.0079733429981086E-9,
+              "rmse": 7.179441310370228E-9
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 8.381903171539307E-8,
+              "mean_absolute_difference": 3.690138959831933E-9,
+              "rmse": 8.151218327420923E-9
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 8.89413058757782E-8,
+              "mean_absolute_difference": 4.921980637054393E-9,
+              "rmse": 1.0672258911154987E-8
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 8.568167686462402E-8,
+              "mean_absolute_difference": 3.6573672130341745E-9,
+              "rmse": 8.99731174917403E-9
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 8.195638656616211E-8,
+              "mean_absolute_difference": 3.1668392458178223E-9,
+              "rmse": 7.816124345135309E-9
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 7.450580596923828E-8,
+              "mean_absolute_difference": 2.7068238258228424E-9,
+              "rmse": 6.660457932750388E-9
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 6.51925802230835E-8,
+              "mean_absolute_difference": 2.3771425966751177E-9,
+              "rmse": 5.871302103559376E-9
+            }
+          ]
+        },
+        {
+          "stage": "08_downsampled_220",
+          "expected_shape": [
+            7,
+            220
+          ],
+          "actual_shape": [
+            7,
+            220
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 2.2351741790771484E-8,
+          "mean_absolute_difference": 1.2210465412225586E-9,
+          "rmse": 2.2023879326614875E-9,
+          "relative_l2_error": 1.1149767463791975E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 1.1175870895385742E-8,
+              "mean_absolute_difference": 1.0567170895890078E-9,
+              "rmse": 1.7920783124024756E-9
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 1.1175870895385742E-8,
+              "mean_absolute_difference": 1.5524082383225588E-9,
+              "rmse": 2.4734020417360165E-9
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 2.2351741790771484E-8,
+              "mean_absolute_difference": 2.4103542273223867E-9,
+              "rmse": 4.14097143065238E-9
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 7.450580596923828E-9,
+              "mean_absolute_difference": 1.0171075618100903E-9,
+              "rmse": 1.5062627613565433E-9
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 7.450580596923828E-9,
+              "mean_absolute_difference": 8.877577784005553E-10,
+              "rmse": 1.3947362058049555E-9
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 7.450580596923828E-9,
+              "mean_absolute_difference": 8.231795205078511E-10,
+              "rmse": 1.341458761853485E-9
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 5.587935447692871E-9,
+              "mean_absolute_difference": 7.998013726054606E-10,
+              "rmse": 1.2095674079678398E-9
+            }
+          ]
+        },
+        {
+          "stage": "09_standardized",
+          "expected_shape": [
+            7,
+            220
+          ],
+          "actual_shape": [
+            7,
+            220
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 9.5367431640625E-7,
+          "mean_absolute_difference": 7.520820990857946E-8,
+          "rmse": 1.289795922041171E-7,
+          "relative_l2_error": 1.289796565783022E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 6.011052226478404E-8,
+              "rmse": 9.555095335222107E-8
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 5.960464477539062E-7,
+              "mean_absolute_difference": 9.300009961324659E-8,
+              "rmse": 1.4175224303942292E-7
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 7.152557373046875E-7,
+              "mean_absolute_difference": 1.0134165429256179E-7,
+              "rmse": 1.6387417218758512E-7
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 5.9486641971902415E-8,
+              "rmse": 9.379056430521682E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 5.8879694816741074E-8,
+              "rmse": 9.682115731973391E-8
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 9.5367431640625E-7,
+              "mean_absolute_difference": 7.281064013527199E-8,
+              "rmse": 1.4332425245919306E-7
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 9.5367431640625E-7,
+              "mean_absolute_difference": 8.082821626554835E-8,
+              "rmse": 1.471695322822628E-7
+            }
+          ]
+        },
+        {
+          "stage": "10_padded_7x400",
+          "expected_shape": [
+            7,
+            400
+          ],
+          "actual_shape": [
+            7,
+            400
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 9.5367431640625E-7,
+          "mean_absolute_difference": 4.6932493985098386E-8,
+          "rmse": 9.615876294834271E-8,
+          "relative_l2_error": 1.2947018894273782E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 3.641354851424694E-8,
+              "rmse": 7.103852191338968E-8
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 5.960464477539062E-7,
+              "mean_absolute_difference": 5.659829184878618E-8,
+              "rmse": 1.0543954184205853E-7
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 7.152557373046875E-7,
+              "mean_absolute_difference": 5.741429049521685E-8,
+              "rmse": 1.2155802883851392E-7
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 3.774679498746991E-8,
+              "rmse": 6.995979927502441E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 4.579487722367048E-8,
+              "rmse": 7.453566506356551E-8
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 9.5367431640625E-7,
+              "mean_absolute_difference": 4.339861334301531E-8,
+              "rmse": 1.0640955199932309E-7
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 9.5367431640625E-7,
+              "mean_absolute_difference": 5.1161041483283046E-8,
+              "rmse": 1.0960063526237089E-7
+            }
+          ]
+        }
+      ],
+      "android_u8u8_prediction_ml": 124.01663970947266,
+      "python_u8u8_prediction_ml": 124.01663970947266,
+      "prediction_absolute_difference_ml": 0
+    },
+    {
+      "sample_id": "150_30.txt",
+      "partition": "wearable validation",
+      "target_ml": 150,
+      "stages": [
+        {
+          "stage": "01_parsed_six_channel_raw",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0,
+          "rmse": 0,
+          "relative_l2_error": 0,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            }
+          ]
+        },
+        {
+          "stage": "02_amplitude_scaled",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0,
+          "rmse": 0,
+          "relative_l2_error": 0,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            }
+          ]
+        },
+        {
+          "stage": "03_tgc_output",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 5.7220458984375E-6,
+          "mean_absolute_difference": 8.897019749080451E-8,
+          "rmse": 3.1757061413109297E-7,
+          "relative_l2_error": 5.757196359625247E-8,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 5.7220458984375E-6,
+              "mean_absolute_difference": 1.354825258204073E-7,
+              "rmse": 4.608404949774114E-7
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 3.814697265625E-6,
+              "mean_absolute_difference": 7.636112968611996E-8,
+              "rmse": 2.6228973090482206E-7
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 1.9073486328125E-6,
+              "mean_absolute_difference": 8.087166634140885E-8,
+              "rmse": 2.829377509590481E-7
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 1.9073486328125E-6,
+              "mean_absolute_difference": 5.07691197526583E-8,
+              "rmse": 1.7788295695780726E-7
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 3.814697265625E-6,
+              "mean_absolute_difference": 8.4005853295821E-8,
+              "rmse": 2.880357028076234E-7
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 3.814697265625E-6,
+              "mean_absolute_difference": 1.0633089004841168E-7,
+              "rmse": 3.595497484670914E-7
+            }
+          ]
+        },
+        {
+          "stage": "04_bandpass_filtered",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 2.384185791015625E-6,
+          "mean_absolute_difference": 6.584679547727567E-8,
+          "rmse": 1.69071514780898E-7,
+          "relative_l2_error": 3.033162924776456E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 2.384185791015625E-6,
+              "mean_absolute_difference": 9.826022253633938E-8,
+              "rmse": 2.4590882455360007E-7
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 1.1920928955078125E-6,
+              "mean_absolute_difference": 5.56210878244201E-8,
+              "rmse": 1.3850110918553026E-7
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 1.4454126358032227E-6,
+              "mean_absolute_difference": 5.983565649625433E-8,
+              "rmse": 1.471907702497897E-7
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 1.0728836059570312E-6,
+              "mean_absolute_difference": 3.930792033535191E-8,
+              "rmse": 9.740396582679692E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 1.430511474609375E-6,
+              "mean_absolute_difference": 6.239655440665182E-8,
+              "rmse": 1.5279675199700837E-7
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 1.7881393432617188E-6,
+              "mean_absolute_difference": 7.965933126463654E-8,
+              "rmse": 1.932817958229371E-7
+            }
+          ]
+        },
+        {
+          "stage": "05_clipped_cropped",
+          "expected_shape": [
+            6,
+            2700
+          ],
+          "actual_shape": [
+            6,
+            2700
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 1.2665987014770508E-7,
+          "mean_absolute_difference": 3.681677995886006E-9,
+          "rmse": 9.39077875058724E-9,
+          "relative_l2_error": 2.662747828805339E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 9.313225746154785E-8,
+              "mean_absolute_difference": 4.715760008332803E-9,
+              "rmse": 1.1975095217183002E-8
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 5.774199962615967E-8,
+              "mean_absolute_difference": 2.981479930760408E-9,
+              "rmse": 7.506156922723124E-9
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 7.450580596923828E-8,
+              "mean_absolute_difference": 3.138053275338111E-9,
+              "rmse": 7.71076199321769E-9
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 4.6566128730773926E-8,
+              "mean_absolute_difference": 2.2855339849498976E-9,
+              "rmse": 5.503470206103737E-9
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 7.078051567077637E-8,
+              "mean_absolute_difference": 3.1445765734537824E-9,
+              "rmse": 8.002000491598169E-9
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 1.2665987014770508E-7,
+              "mean_absolute_difference": 5.824664202481034E-9,
+              "rmse": 1.3251377639803427E-8
+            }
+          ]
+        },
+        {
+          "stage": "06_logical_seven_channel",
+          "expected_shape": [
+            7,
+            2700
+          ],
+          "actual_shape": [
+            7,
+            2700
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 1.2665987014770508E-7,
+          "mean_absolute_difference": 3.5810652663097018E-9,
+          "rmse": 9.09626935391533E-9,
+          "relative_l2_error": 2.66378201028852E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 7.078051567077637E-8,
+              "mean_absolute_difference": 3.1445765734537824E-9,
+              "rmse": 8.002000491598169E-9
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 5.587935447692871E-8,
+              "mean_absolute_difference": 2.9773888888518775E-9,
+              "rmse": 7.076330960177699E-9
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 1.2665987014770508E-7,
+              "mean_absolute_difference": 5.824664202481034E-9,
+              "rmse": 1.3251377639803427E-8
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 9.313225746154785E-8,
+              "mean_absolute_difference": 4.715760008332803E-9,
+              "rmse": 1.1975095217183002E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 5.774199962615967E-8,
+              "mean_absolute_difference": 2.981479930760408E-9,
+              "rmse": 7.506156922723124E-9
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 7.450580596923828E-8,
+              "mean_absolute_difference": 3.138053275338111E-9,
+              "rmse": 7.71076199321769E-9
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 4.6566128730773926E-8,
+              "mean_absolute_difference": 2.2855339849498976E-9,
+              "rmse": 5.503470206103737E-9
+            }
+          ]
+        },
+        {
+          "stage": "07_gaussian_smoothed",
+          "expected_shape": [
+            7,
+            2700
+          ],
+          "actual_shape": [
+            7,
+            2700
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 9.12696123123169E-8,
+          "mean_absolute_difference": 3.4392216106174882E-9,
+          "rmse": 8.160267340847582E-9,
+          "relative_l2_error": 2.964917939912561E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 6.332993507385254E-8,
+              "mean_absolute_difference": 3.1116468124781493E-9,
+              "rmse": 7.462014481585575E-9
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 6.379559636116028E-8,
+              "mean_absolute_difference": 3.673703180017094E-9,
+              "rmse": 8.149573932764862E-9
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 9.12696123123169E-8,
+              "mean_absolute_difference": 4.7008228131483485E-9,
+              "rmse": 1.0437247770020107E-8
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 6.891787052154541E-8,
+              "mean_absolute_difference": 3.9889806026217736E-9,
+              "rmse": 9.793276645812461E-9
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 5.587935447692871E-8,
+              "mean_absolute_difference": 3.299867414709836E-9,
+              "rmse": 7.86070574141091E-9
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 4.6566128730773926E-8,
+              "mean_absolute_difference": 2.770259939139847E-9,
+              "rmse": 6.501595029372751E-9
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 4.6566128730773926E-8,
+              "mean_absolute_difference": 2.5292705122073702E-9,
+              "rmse": 5.9267769450614546E-9
+            }
+          ]
+        },
+        {
+          "stage": "08_downsampled_220",
+          "expected_shape": [
+            7,
+            220
+          ],
+          "actual_shape": [
+            7,
+            220
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 2.2351741790771484E-8,
+          "mean_absolute_difference": 1.2212595933093538E-9,
+          "rmse": 2.1458030116287026E-9,
+          "relative_l2_error": 9.007909149946532E-8,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 7.450580596923828E-9,
+              "mean_absolute_difference": 9.790307393070014E-10,
+              "rmse": 1.5279519750836134E-9
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 1.1175870895385742E-8,
+              "mean_absolute_difference": 1.4346948195121844E-9,
+              "rmse": 2.2831038451768915E-9
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 2.2351741790771484E-8,
+              "mean_absolute_difference": 2.2189355645836752E-9,
+              "rmse": 3.824841733280503E-9
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 7.450580596923828E-9,
+              "mean_absolute_difference": 1.1753854778362437E-9,
+              "rmse": 1.7511284026062234E-9
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 7.450580596923828E-9,
+              "mean_absolute_difference": 9.875128109177405E-10,
+              "rmse": 1.4565122539282523E-9
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 7.450580596923828E-9,
+              "mean_absolute_difference": 8.28351238107478E-10,
+              "rmse": 1.3264756881828585E-9
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 1.4901161193847656E-8,
+              "mean_absolute_difference": 9.249065029011532E-10,
+              "rmse": 1.7627429996282712E-9
+            }
+          ]
+        },
+        {
+          "stage": "09_standardized",
+          "expected_shape": [
+            7,
+            220
+          ],
+          "actual_shape": [
+            7,
+            220
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 7.152557373046875E-7,
+          "mean_absolute_difference": 6.091261981622098E-8,
+          "rmse": 1.0132853374907391E-7,
+          "relative_l2_error": 1.0132857604073917E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 5.375814825211736E-8,
+              "rmse": 9.185446504684255E-8
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 6.734414703466676E-8,
+              "rmse": 1.0752388779878725E-7
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 7.152557373046875E-7,
+              "mean_absolute_difference": 8.021868945268745E-8,
+              "rmse": 1.3095931666768654E-7
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 6.38299917971546E-8,
+              "rmse": 9.661916427747148E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 5.400857348418371E-8,
+              "rmse": 7.869291826479664E-8
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 5.1618553698062894E-8,
+              "rmse": 9.07279643395752E-8
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 5.56102349946741E-8,
+              "rmse": 1.0470878014653334E-7
+            }
+          ]
+        },
+        {
+          "stage": "10_padded_7x400",
+          "expected_shape": [
+            7,
+            400
+          ],
+          "actual_shape": [
+            7,
+            400
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 7.152557373046875E-7,
+          "mean_absolute_difference": 3.6705025325188344E-8,
+          "rmse": 7.535222699418494E-8,
+          "relative_l2_error": 1.015752572057045E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 3.208155249012634E-8,
+              "rmse": 6.822415094472266E-8
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 3.9134756661951544E-8,
+              "rmse": 7.980300975278924E-8
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 7.152557373046875E-7,
+              "mean_absolute_difference": 4.76825880468823E-8,
+              "rmse": 9.726709896282206E-8
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 3.678287612274289E-8,
+              "rmse": 7.169825383254378E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 3.641023795353249E-8,
+              "rmse": 5.9210104998916733E-8
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 3.3419346436858176E-8,
+              "rmse": 6.770203078847359E-8
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 3.142381956422469E-8,
+              "rmse": 7.766416163845883E-8
+            }
+          ]
+        }
+      ],
+      "android_u8u8_prediction_ml": 171.71534729003906,
+      "python_u8u8_prediction_ml": 171.71534729003906,
+      "prediction_absolute_difference_ml": 0
+    },
+    {
+      "sample_id": "300_30.txt",
+      "partition": "wearable validation",
+      "target_ml": 300,
+      "stages": [
+        {
+          "stage": "01_parsed_six_channel_raw",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0,
+          "rmse": 0,
+          "relative_l2_error": 0,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            }
+          ]
+        },
+        {
+          "stage": "02_amplitude_scaled",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 0,
+          "mean_absolute_difference": 0,
+          "rmse": 0,
+          "relative_l2_error": 0,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 0,
+              "mean_absolute_difference": 0,
+              "rmse": 0
+            }
+          ]
+        },
+        {
+          "stage": "03_tgc_output",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 3.0517578125E-5,
+          "mean_absolute_difference": 6.074432500705976E-7,
+          "rmse": 2.02254334421261E-6,
+          "relative_l2_error": 5.899449191355252E-8,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 1.52587890625E-5,
+              "mean_absolute_difference": 4.718977834272664E-7,
+              "rmse": 1.5991166198370137E-6
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 1.52587890625E-5,
+              "mean_absolute_difference": 7.537187684647507E-7,
+              "rmse": 2.3979983526161844E-6
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 3.0517578125E-5,
+              "mean_absolute_difference": 7.469231604773085E-7,
+              "rmse": 2.3706569020470224E-6
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 1.52587890625E-5,
+              "mean_absolute_difference": 5.018108595322701E-7,
+              "rmse": 1.5446706757914852E-6
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 2.288818359375E-5,
+              "mean_absolute_difference": 6.097755431255792E-7,
+              "rmse": 1.864783259845884E-6
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 3.0517578125E-5,
+              "mean_absolute_difference": 5.605333853964112E-7,
+              "rmse": 2.18015622427585E-6
+            }
+          ]
+        },
+        {
+          "stage": "04_bandpass_filtered",
+          "expected_shape": [
+            6,
+            5120
+          ],
+          "actual_shape": [
+            6,
+            5120
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 1.52587890625E-5,
+          "mean_absolute_difference": 4.566646330916568E-7,
+          "rmse": 1.07119922892305E-6,
+          "relative_l2_error": 1.5603836303068872E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 7.152557373046875E-6,
+              "mean_absolute_difference": 3.720033419973845E-7,
+              "rmse": 8.392616347754869E-7
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 1.1444091796875E-5,
+              "mean_absolute_difference": 5.394453945204922E-7,
+              "rmse": 1.253026228481102E-6
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 1.239776611328125E-5,
+              "mean_absolute_difference": 5.38396587934642E-7,
+              "rmse": 1.2236080365211503E-6
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 7.62939453125E-6,
+              "mean_absolute_difference": 3.766877501476529E-7,
+              "rmse": 8.533613044667157E-7
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 8.58306884765625E-6,
+              "mean_absolute_difference": 4.466183408879942E-7,
+              "rmse": 9.640252300924175E-7
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 1.52587890625E-5,
+              "mean_absolute_difference": 4.66836383061775E-7,
+              "rmse": 1.2064763239075225E-6
+            }
+          ]
+        },
+        {
+          "stage": "05_clipped_cropped",
+          "expected_shape": [
+            6,
+            2700
+          ],
+          "actual_shape": [
+            6,
+            2700
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 1.0915100574493408E-6,
+          "mean_absolute_difference": 1.3220734525634077E-8,
+          "rmse": 4.083031903128474E-8,
+          "relative_l2_error": 7.208363346483448E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 6.705522537231445E-7,
+              "mean_absolute_difference": 1.2436670557589322E-8,
+              "rmse": 3.7546512462449266E-8
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 9.723007678985596E-7,
+              "mean_absolute_difference": 1.4816053100435372E-8,
+              "rmse": 4.699949842361117E-8
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 1.0915100574493408E-6,
+              "mean_absolute_difference": 1.5418852651944487E-8,
+              "rmse": 5.0395222574456064E-8
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 7.450580596923828E-7,
+              "mean_absolute_difference": 1.2527008813642034E-8,
+              "rmse": 3.758880143952078E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 6.724148988723755E-7,
+              "mean_absolute_difference": 1.26962489351475E-8,
+              "rmse": 3.7614294695037996E-8
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 7.525086402893066E-7,
+              "mean_absolute_difference": 1.1429573095045742E-8,
+              "rmse": 3.188361092506964E-8
+            }
+          ]
+        },
+        {
+          "stage": "06_logical_seven_channel",
+          "expected_shape": [
+            7,
+            2700
+          ],
+          "actual_shape": [
+            7,
+            2700
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 1.0915100574493408E-6,
+          "mean_absolute_difference": 1.3413703093734947E-8,
+          "rmse": 4.028953827914873E-8,
+          "relative_l2_error": 7.396031588803157E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 6.724148988723755E-7,
+              "mean_absolute_difference": 1.26962489351475E-8,
+              "rmse": 3.7614294695037996E-8
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 5.811452865600586E-7,
+              "mean_absolute_difference": 1.4571514502340169E-8,
+              "rmse": 3.687870049296724E-8
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 7.525086402893066E-7,
+              "mean_absolute_difference": 1.1429573095045742E-8,
+              "rmse": 3.188361092506964E-8
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 6.705522537231445E-7,
+              "mean_absolute_difference": 1.2436670557589322E-8,
+              "rmse": 3.7546512462449266E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 9.723007678985596E-7,
+              "mean_absolute_difference": 1.4816053100435372E-8,
+              "rmse": 4.699949842361117E-8
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 1.0915100574493408E-6,
+              "mean_absolute_difference": 1.5418852651944487E-8,
+              "rmse": 5.0395222574456064E-8
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 7.450580596923828E-7,
+              "mean_absolute_difference": 1.2527008813642034E-8,
+              "rmse": 3.758880143952078E-8
+            }
+          ]
+        },
+        {
+          "stage": "07_gaussian_smoothed",
+          "expected_shape": [
+            7,
+            2700
+          ],
+          "actual_shape": [
+            7,
+            2700
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 6.258487701416016E-7,
+          "mean_absolute_difference": 1.2858422282825753E-8,
+          "rmse": 2.8790537302713152E-8,
+          "relative_l2_error": 7.760568296869357E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 4.76837158203125E-7,
+              "mean_absolute_difference": 1.2762675396515987E-8,
+              "rmse": 2.9335815137109226E-8
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 4.1909515857696533E-7,
+              "mean_absolute_difference": 1.2488162358081469E-8,
+              "rmse": 2.497772346587791E-8
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 6.258487701416016E-7,
+              "mean_absolute_difference": 1.1975895109504496E-8,
+              "rmse": 2.619389618416567E-8
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 4.3213367462158203E-7,
+              "mean_absolute_difference": 1.2828425042243908E-8,
+              "rmse": 3.0485239602038095E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 3.9208680391311646E-7,
+              "mean_absolute_difference": 1.3410390154065141E-8,
+              "rmse": 2.9137007381573848E-8
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 4.400499165058136E-7,
+              "mean_absolute_difference": 1.3513260573408506E-8,
+              "rmse": 2.979295015653791E-8
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 4.777684807777405E-7,
+              "mean_absolute_difference": 1.303014734596083E-8,
+              "rmse": 3.1076252008109746E-8
+            }
+          ]
+        },
+        {
+          "stage": "08_downsampled_220",
+          "expected_shape": [
+            7,
+            220
+          ],
+          "actual_shape": [
+            7,
+            220
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 6.332993507385254E-8,
+          "mean_absolute_difference": 1.090884797559558E-8,
+          "rmse": 1.541360065534328E-8,
+          "relative_l2_error": 5.51867760576494E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 5.21540641784668E-8,
+              "mean_absolute_difference": 1.105183235433122E-8,
+              "rmse": 1.528872770856409E-8
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 5.634501576423645E-8,
+              "mean_absolute_difference": 1.085069760105211E-8,
+              "rmse": 1.5219267935688125E-8
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 6.332993507385254E-8,
+              "mean_absolute_difference": 1.1281492168729363E-8,
+              "rmse": 1.6470499835075213E-8
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 6.332993507385254E-8,
+              "mean_absolute_difference": 1.053561969787221E-8,
+              "rmse": 1.52112037570953E-8
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 5.180481821298599E-8,
+              "mean_absolute_difference": 1.0647967097942125E-8,
+              "rmse": 1.4783446383308729E-8
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 5.448237061500549E-8,
+              "mean_absolute_difference": 1.0868957774205641E-8,
+              "rmse": 1.5078089117740845E-8
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 5.21540641784668E-8,
+              "mean_absolute_difference": 1.1125369135036387E-8,
+              "rmse": 1.5783698607238102E-8
+            }
+          ]
+        },
+        {
+          "stage": "09_standardized",
+          "expected_shape": [
+            7,
+            220
+          ],
+          "actual_shape": [
+            7,
+            220
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 2.771615982055664E-6,
+          "mean_absolute_difference": 4.1621605269973734E-7,
+          "rmse": 5.848639094645914E-7,
+          "relative_l2_error": 5.848641194874393E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 2.1457672119140625E-6,
+              "mean_absolute_difference": 4.1558259082111447E-7,
+              "rmse": 5.670140468644223E-7
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 2.771615982055664E-6,
+              "mean_absolute_difference": 5.3965393982997E-7,
+              "rmse": 7.472125097860505E-7
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 2.041459083557129E-6,
+              "mean_absolute_difference": 3.689651335166259E-7,
+              "rmse": 5.311875012910288E-7
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 1.7881393432617188E-6,
+              "mean_absolute_difference": 3.1178536697883497E-7,
+              "rmse": 4.3434065677289486E-7
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 2.151820808649063E-6,
+              "mean_absolute_difference": 4.40345188094811E-7,
+              "rmse": 6.091651928881282E-7
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 2.2836029529571533E-6,
+              "mean_absolute_difference": 4.6091895042495297E-7,
+              "rmse": 6.348483522200781E-7
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 1.6987323760986328E-6,
+              "mean_absolute_difference": 3.762611992318522E-7,
+              "rmse": 5.193288494204873E-7
+            }
+          ]
+        },
+        {
+          "stage": "10_padded_7x400",
+          "expected_shape": [
+            7,
+            400
+          ],
+          "actual_shape": [
+            7,
+            400
+          ],
+          "expected_dtype": "float32-little-endian",
+          "actual_dtype": "Kotlin Float \/ IEEE-754 binary32",
+          "shape_mismatch": false,
+          "dtype_mismatch": false,
+          "maximum_absolute_difference": 2.771615982055664E-6,
+          "mean_absolute_difference": 2.686131275757881E-7,
+          "rmse": 4.4032728041606307E-7,
+          "relative_l2_error": 5.875881832602007E-7,
+          "expected_nonfinite_count": 0,
+          "actual_nonfinite_count": 0,
+          "channels": [
+            {
+              "channel_index": 0,
+              "maximum_absolute_difference": 2.1457672119140625E-6,
+              "mean_absolute_difference": 2.486869925633073E-7,
+              "rmse": 4.2157679227847617E-7
+            },
+            {
+              "channel_index": 1,
+              "maximum_absolute_difference": 2.771615982055664E-6,
+              "mean_absolute_difference": 3.2363175705540926E-7,
+              "rmse": 5.555882605715161E-7
+            },
+            {
+              "channel_index": 2,
+              "maximum_absolute_difference": 2.041459083557129E-6,
+              "mean_absolute_difference": 2.096363459713757E-7,
+              "rmse": 3.940659956308207E-7
+            },
+            {
+              "channel_index": 3,
+              "maximum_absolute_difference": 1.7881393432617188E-6,
+              "mean_absolute_difference": 1.8195933080278336E-7,
+              "rmse": 3.224940911986754E-7
+            },
+            {
+              "channel_index": 4,
+              "maximum_absolute_difference": 2.151820808649063E-6,
+              "mean_absolute_difference": 2.815847983583808E-7,
+              "rmse": 4.555700072075929E-7
+            },
+            {
+              "channel_index": 5,
+              "maximum_absolute_difference": 2.2836029529571533E-6,
+              "mean_absolute_difference": 3.3397169318050147E-7,
+              "rmse": 4.85856282323532E-7
+            },
+            {
+              "channel_index": 6,
+              "maximum_absolute_difference": 1.6987323760986328E-6,
+              "mean_absolute_difference": 3.008209750987589E-7,
+              "rmse": 4.097812633181411E-7
+            }
+          ]
+        }
+      ],
+      "android_u8u8_prediction_ml": 143.0961151123047,
+      "python_u8u8_prediction_ml": 143.0961151123047,
+      "prediction_absolute_difference_ml": 0
+    }
+  ]
+}

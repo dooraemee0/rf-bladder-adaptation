@@ -1,0 +1,9 @@
+# Versions used for the audited desktop pipeline. Keep the Android and Python
+# ONNX Runtime versions aligned when comparing outputs.
+torch==2.6.0
+onnx==1.18.0
+onnxruntime==1.23.2
+numpy==2.1.2
+pandas==2.2.3
+scipy==1.15.1
+scikit-learn==1.6.1

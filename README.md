@@ -56,6 +56,9 @@ validation-controlled protocol, and against two DER++ variants introduced here
 ├── table4_*.yaml               # human-readable DER++ ablation settings
 ├── scripts/                    # runnable .sh wrappers (paths via env vars)
 ├── release/checkpoint_manifest.json  # release ZIP/model hashes and byte sizes
+├── deployment/                 # ONNX export, quantization, selection, and validation
+├── android_mobile_benchmark/   # Android app, preprocessing module, and benchmarks
+├── reproducibility/            # artifact manifests and recorded-result checks
 ├── checkpoints/final/          # 12 released checkpoints (der++/cfp_derpp/r_derpp × 4 seeds)
 ├── requirements.txt
 ├── .env.example
@@ -126,7 +129,6 @@ them from the GitHub Release above and unzip into place:
 
 ```bash
 # from the repo root, after downloading the release asset
-unzip rf-bladder-adaptation-checkpoints.zip   # creates checkpoints/final/...
 python scripts/verify_released_checkpoints.py \
   --zip rf-bladder-adaptation-checkpoints.zip
 unzip rf-bladder-adaptation-checkpoints.zip
@@ -139,6 +141,57 @@ hash and size as well as the SHA-256 hash and byte size of every extracted model
 The expected release ZIP SHA-256 is
 `6a1bc47398f893c24a629f645f64ad9075f05a2d7ae27042694cb55ce8502020`.
 
+## Android deployment and physical-device validation
+
+The repository includes the wearable RF preprocessing implementation, ONNX
+export and U8U8 QDQ quantization scripts, Android application, and Jetpack
+Microbenchmark source. The selected deployment artifact is DER++ seed 3:
+
+- checkpoint SHA-256: `ba9e8bd59b8eeb14ea09cbb2fbd613fad4490699064c25e8d882681d04ce2572`
+- U8U8 QDQ ONNX SHA-256: `f473b9b8b4a745a9d7579896619af063d2e9cabfaad71fd699728837073a684e`
+- ONNX file size: 6,651,648 bytes
+
+Download the ONNX model and processed 60-sample validation tensor from the
+GitHub Release, then install verified copies into the Android modules:
+
+```bash
+curl -fL -O https://github.com/dooraemee0/rf-bladder-adaptation/releases/download/v1.0.0/derpp_seed3_u8u8_qdq.onnx
+curl -fL -O https://github.com/dooraemee0/rf-bladder-adaptation/releases/download/v1.0.0/mobile_test_inputs.bin
+python reproducibility/install_release_assets.py \
+  --repo-root . \
+  --onnx derpp_seed3_u8u8_qdq.onnx \
+  --test-inputs mobile_test_inputs.bin
+```
+
+Recorded Android outputs are checked without regenerating performance metrics:
+
+```bash
+python reproducibility/verify_recorded_android_results.py --repo-root .
+python -m unittest reproducibility/test_release.py
+```
+
+On a host with JDK 17 and Android SDK 36:
+
+```bash
+cd android_mobile_benchmark
+./gradlew :pipeline:test
+./gradlew :app:assembleBenchmark
+./gradlew :benchmark:assembleReleaseAndroidTest
+```
+
+The physical-device snapshot used ONNX Runtime Android 1.23.2, one CPU thread,
+and batch size 1 on a Galaxy S8+. Android and desktop predictions were identical
+for all 60 processed held-out phantom inputs. The three-session
+median-of-session-medians was 14.277 ms for smartphone-resident RF preprocessing
+and 39.202 ms for preprocessing plus ONNX inference and scalar retrieval. The
+paper-facing pooled summaries were 14.33 ms and 39.23 ms, respectively. These
+boundaries begin with six-channel RF already in smartphone memory and exclude
+live acquisition, BLE transport, networking, and screen rendering; they are not
+acquisition-to-readout latency.
+
+See [`deployment/PUBLIC_ANDROID_README.md`](deployment/PUBLIC_ANDROID_README.md)
+for the complete input contract, recorded results, and interpretation limits.
+
 ## Data availability
 
 Clinical RF data are **not publicly available** owing to patient privacy and IRB
@@ -149,6 +202,12 @@ paper. Re-evaluating the checkpoints or retraining the models requires the RF
 data under the stated data-use conditions; the public release permits the code,
 configuration, and model artifacts to be inspected and hash-verified without
 those data.
+
+The mobile test tensor distributed as a GitHub Release asset contains processed
+benchtop-phantom model inputs only. Raw phantom RF recordings are not
+distributed in this repository; the raw-RF instrumentation tests can be rerun
+after separately authorized assets are supplied in the paths documented by the
+Android project.
 
 ## Citation
 

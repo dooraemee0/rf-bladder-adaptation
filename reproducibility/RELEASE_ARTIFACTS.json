@@ -1,0 +1,42 @@
+[
+  {
+    "bytes": 26056818,
+    "file": "stage1_best_model.pt",
+    "sha256": "cfb8f0dd43387a59e53c6eba0eb32fa980b883198afee5da77cdba596de1d0d0"
+  },
+  {
+    "bytes": 868,
+    "file": "stage1_test_idx.pt",
+    "sha256": "8e6a869594f18277426915f861837c3fc2c7817432f8219b9e15623c0f9e6ed8"
+  },
+  {
+    "bytes": 26049754,
+    "file": "derpp_seed1_model.pt",
+    "sha256": "0a5924530dd840435603598e682847f33cd62c9770a6be8a74babee736efb4b8"
+  },
+  {
+    "bytes": 26049754,
+    "file": "derpp_seed2_model.pt",
+    "sha256": "c87dc4211bec14e01b31a45ff4d70a3068668b516b35e9561dced9406a8af685"
+  },
+  {
+    "bytes": 26049754,
+    "file": "derpp_seed3_model.pt",
+    "sha256": "ba9e8bd59b8eeb14ea09cbb2fbd613fad4490699064c25e8d882681d04ce2572"
+  },
+  {
+    "bytes": 26049754,
+    "file": "derpp_seed42_model.pt",
+    "sha256": "773a811137b7e3e73656e111d3ddd4b428591b2a79ac2c3e5d367750b4c821bc"
+  },
+  {
+    "bytes": 6651648,
+    "file": "derpp_seed3_u8u8_qdq.onnx",
+    "sha256": "f473b9b8b4a745a9d7579896619af063d2e9cabfaad71fd699728837073a684e"
+  },
+  {
+    "bytes": 672000,
+    "file": "mobile_test_inputs.bin",
+    "sha256": "a5c17c07419f61f0c552ba310e0fca60ff21a00bb2215a2fdbf8b39846e8c5b7"
+  }
+]

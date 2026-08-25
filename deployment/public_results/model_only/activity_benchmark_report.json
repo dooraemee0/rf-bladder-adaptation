@@ -1,0 +1,40 @@
+{
+  "benchmark_scope": "OrtSession.run model-only",
+  "batch_size": 1,
+  "input_shape": [
+    1,
+    7,
+    400
+  ],
+  "execution_provider": "CPUExecutionProvider",
+  "intra_op_threads": 1,
+  "inter_op_threads": 1,
+  "warmup_runs": 30,
+  "measured_runs": 500,
+  "model_asset_read_ms": 102.661615,
+  "session_create_ms": 85.838154,
+  "latency_mean_ms": 10.533407981999998,
+  "latency_median_ms": 10.5390965,
+  "latency_standard_deviation_ms": 0.06933281905001182,
+  "latency_p90_ms": 10.595346,
+  "latency_minimum_ms": 10.371846,
+  "latency_maximum_ms": 11.138308,
+  "pss_before_kb": 69480,
+  "pss_after_kb": 66836,
+  "total_ram_bytes": 5965942784,
+  "android_desktop_max_abs_difference_ml": 0,
+  "manufacturer": "samsung",
+  "device_model": "SM-G955N",
+  "soc_manufacturer": "unavailable",
+  "soc_model": "unavailable",
+  "android_version": "9",
+  "android_sdk": 28,
+  "available_processors": 8,
+  "onnx_runtime_version": "1.23.2",
+  "excluded": [
+    "model loading",
+    "RF preprocessing",
+    "BLE",
+    "UI update"
+  ]
+}

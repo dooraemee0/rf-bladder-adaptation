@@ -1,0 +1,207 @@
+{
+    "context": {
+        "build": {
+            "brand": "samsung",
+            "device": "dream2lteks",
+            "fingerprint": "samsung/dream2lteks/dream2lteks:9/PPR1.180610.011/G955NKSU5DVG2:user/release-keys",
+            "id": "PPR1.180610.011",
+            "model": "SM-G955N",
+            "type": "user",
+            "version": {
+                "codename": "REL",
+                "sdk": 28
+            }
+        },
+        "cpuCoreCount": 8,
+        "cpuLocked": false,
+        "cpuMaxFreqHz": 2314000000,
+        "memTotalBytes": 5965942784,
+        "sustainedPerformanceModeEnabled": true,
+        "artMainlineVersion": -1,
+        "osCodenameAbbreviated": "P",
+        "compilationMode": "speed-profile",
+        "payload": {}
+    },
+    "benchmarks": [
+        {
+            "name": "sixChannelRawRfToModelTensor",
+            "params": {},
+            "className": "org.dgist.bladderbenchmark.microbenchmark.RawRfPreprocessingBenchmark",
+            "totalRunTimeNs": 16917679834,
+            "metrics": {
+                "timeNs": {
+                    "minimum": 1.3500802285714285E7,
+                    "maximum": 1.5671478E7,
+                    "median": 1.4258887357142856E7,
+                    "coefficientOfVariation": 0.032817137124212505,
+                    "runs": [
+                        1.420264842857143E7,
+                        1.5170587857142856E7,
+                        1.368450542857143E7,
+                        1.4963098857142856E7,
+                        1.5221697857142856E7,
+                        1.4152741714285715E7,
+                        1.523654942857143E7,
+                        1.4249236142857144E7,
+                        1.4407587857142856E7,
+                        1.4914291285714285E7,
+                        1.4720813285714285E7,
+                        1.5301615285714285E7,
+                        1.4069543857142856E7,
+                        1.4725258285714285E7,
+                        1.4142802285714285E7,
+                        1.3552587857142856E7,
+                        1.414541757142857E7,
+                        1.399604942857143E7,
+                        1.4260587857142856E7,
+                        1.440586257142857E7,
+                        1.3860741714285715E7,
+                        1.429348342857143E7,
+                        1.3828835142857144E7,
+                        1.398990657142857E7,
+                        1.410059342857143E7,
+                        1.428759342857143E7,
+                        1.434648357142857E7,
+                        1.384158242857143E7,
+                        1.4159824142857144E7,
+                        1.411140657142857E7,
+                        1.3691065857142856E7,
+                        1.4544033E7,
+                        1.3946142714285715E7,
+                        1.428592857142857E7,
+                        1.4731390142857144E7,
+                        1.4079055E7,
+                        1.4698554857142856E7,
+                        1.3500802285714285E7,
+                        1.4132175857142856E7,
+                        1.5671478E7,
+                        1.4463318714285715E7,
+                        1.4274620857142856E7,
+                        1.4447598857142856E7,
+                        1.407259342857143E7,
+                        1.437856042857143E7,
+                        1.3808285714285715E7,
+                        1.4257186857142856E7,
+                        1.3749131857142856E7,
+                        1.4331489E7,
+                        1.4333609857142856E7
+                    ]
+                },
+                "allocationCount": {
+                    "minimum": 108.71428571428571,
+                    "maximum": 109.85714285714286,
+                    "median": 109.14285714285714,
+                    "coefficientOfVariation": 0.00428264656553974,
+                    "runs": [
+                        109.85714285714286,
+                        108.71428571428571,
+                        109.14285714285714,
+                        108.71428571428571,
+                        109.14285714285714
+                    ]
+                }
+            },
+            "sampledMetrics": {},
+            "warmupIterations": 539,
+            "repeatIterations": 7,
+            "thermalThrottleSleepSeconds": 0,
+            "profilerOutputs": [
+                {
+                    "type": "PerfettoTrace",
+                    "label": "Trace",
+                    "filename": "RawRfPreprocessingBenchmark_sixChannelRawRfToModelTensor_2026-08-17-09-04-16.perfetto-trace"
+                }
+            ]
+        },
+        {
+            "name": "sixChannelRawRfToScalarVolume",
+            "params": {},
+            "className": "org.dgist.bladderbenchmark.microbenchmark.RawRfToVolumeBenchmark",
+            "totalRunTimeNs": 15344684220,
+            "metrics": {
+                "timeNs": {
+                    "minimum": 3.78883655E7,
+                    "maximum": 4.04089615E7,
+                    "median": 3.960159625E7,
+                    "coefficientOfVariation": 0.023952292462962953,
+                    "runs": [
+                        3.8049981E7,
+                        4.01621535E7,
+                        3.79579235E7,
+                        4.04089615E7,
+                        3.9666096E7,
+                        3.9699865E7,
+                        3.80165385E7,
+                        3.98532305E7,
+                        3.802475E7,
+                        3.97723845E7,
+                        3.80227115E7,
+                        3.96165385E7,
+                        3.79706345E7,
+                        3.9924596E7,
+                        3.79008845E7,
+                        3.9586654E7,
+                        3.8688154E7,
+                        4.02300385E7,
+                        3.8111827E7,
+                        3.97315385E7,
+                        3.8101923E7,
+                        3.99313075E7,
+                        3.7994827E7,
+                        3.98175E7,
+                        3.8044058E7,
+                        3.97999805E7,
+                        3.8099231E7,
+                        3.98483075E7,
+                        3.8086231E7,
+                        3.98459035E7,
+                        3.79735965E7,
+                        4.00046155E7,
+                        3.80810765E7,
+                        3.99464615E7,
+                        3.80453655E7,
+                        3.979725E7,
+                        3.79456155E7,
+                        4.0061308E7,
+                        3.80546155E7,
+                        3.9727769E7,
+                        3.85275965E7,
+                        4.0265365E7,
+                        3.78883655E7,
+                        3.97886155E7,
+                        3.81897115E7,
+                        3.9822577E7,
+                        3.79615575E7,
+                        3.98016155E7,
+                        3.8073673E7,
+                        3.99923465E7
+                    ]
+                },
+                "allocationCount": {
+                    "minimum": 154.0,
+                    "maximum": 156.5,
+                    "median": 155.5,
+                    "coefficientOfVariation": 0.006585443936992031,
+                    "runs": [
+                        156.5,
+                        155.5,
+                        154.0,
+                        155.5,
+                        156.5
+                    ]
+                }
+            },
+            "sampledMetrics": {},
+            "warmupIterations": 205,
+            "repeatIterations": 2,
+            "thermalThrottleSleepSeconds": 0,
+            "profilerOutputs": [
+                {
+                    "type": "PerfettoTrace",
+                    "label": "Trace",
+                    "filename": "RawRfToVolumeBenchmark_sixChannelRawRfToScalarVolume_2026-08-17-09-04-32.perfetto-trace"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,931 @@
+{
+  "format_version": 1,
+  "partition": "held-out wearable test",
+  "sample_count": 60,
+  "one_time_evaluation_after_validation_freeze": true,
+  "implementation_freeze_manifest_sha256": "6785e1229fbf0b81a38158f9e2d7d37c4f681ca3bbb7a510b6838a8fb9bf9e1f",
+  "checkpoint_sha256": "ba9e8bd59b8eeb14ea09cbb2fbd613fad4490699064c25e8d882681d04ce2572",
+  "model_sha256": "f473b9b8b4a745a9d7579896619af063d2e9cabfaad71fd699728837073a684e",
+  "expected_inputs_asset": "heldout_expected_inputs.f32le.bin",
+  "expected_inputs_sha256": "a5c17c07419f61f0c552ba310e0fca60ff21a00bb2215a2fdbf8b39846e8c5b7",
+  "physical_channel_order": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "H_left",
+    "H_right"
+  ],
+  "logical_channel_order": [
+    "H_left",
+    "H_virtual_mean_S2_S3",
+    "H_right",
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ],
+  "desktop_recheck_prediction_max_abs_difference_ml": 0.0,
+  "samples": [
+    {
+      "index": 0,
+      "sample_id": "50_84.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_84.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "a03fe7df7962c6da76fe75af743706ac7e33ab863fb8423c39dde8021c248f78",
+      "expected_tensor_sha256": "d088c3d37cdb2ccd7e5706b20748db11d1e4a596b7ee1fb8ac83c7aae7f14665",
+      "expected_desktop_u8u8_ml": 49.28866195678711
+    },
+    {
+      "index": 1,
+      "sample_id": "50_57.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_57.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "fda678e84a9a310674b3592ba2ee7151e51916cce182d6d97d086dcc7b286594",
+      "expected_tensor_sha256": "77817ccfe4854b3d59a90d0958c706fe6a56c867f99efd16242e1f42c7c9efdc",
+      "expected_desktop_u8u8_ml": 46.10874938964844
+    },
+    {
+      "index": 2,
+      "sample_id": "50_72.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_72.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "58434d64dfd821b8751ac9449c1dc04b5f2962063f97d98e5e5aa31654d78a61",
+      "expected_tensor_sha256": "c6c41a9c7f0d0adb3c21411f73631aa01ebb4c4df6748f9d1097a00ac6841b17",
+      "expected_desktop_u8u8_ml": 76.31793212890625
+    },
+    {
+      "index": 3,
+      "sample_id": "50_5.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_5.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "74975bd09c96548d0b6a5cce44afe3d3ec8ac668568d1add55a207152590460d",
+      "expected_tensor_sha256": "4962fd3557974101fd620ee309bd183c2e8c4f3813d4dc09dc0c3fd58bdf3bf9",
+      "expected_desktop_u8u8_ml": 96.98737335205078
+    },
+    {
+      "index": 4,
+      "sample_id": "50_49.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_49.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "9f2bb2609f0965551c59927e89addd00b63b321cec656950404d2492d6f99f32",
+      "expected_tensor_sha256": "f1130100d7f0280aed95b89e4ac3bdb0e95657b3f2deeff336a9b29d586e53d4",
+      "expected_desktop_u8u8_ml": 181.2550811767578
+    },
+    {
+      "index": 5,
+      "sample_id": "50_44.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_44.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "c0708603d8aa914b5e106461c1ff2df5706f3d448aa1d081ef20beda22371f4c",
+      "expected_tensor_sha256": "3e026a6f26da5152651f9ac4dfd4d8d3c36d82eb5602a9176a951d4ca8d87d16",
+      "expected_desktop_u8u8_ml": 106.52710723876953
+    },
+    {
+      "index": 6,
+      "sample_id": "50_29.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_29.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "d52532382156aea84f54b3849b648432165c80a39e01ba83a240bed522bff693",
+      "expected_tensor_sha256": "b4138dff507d845fd668319dd99a58bcf64c3d3903379903511288b2b1d42963",
+      "expected_desktop_u8u8_ml": 108.1170654296875
+    },
+    {
+      "index": 7,
+      "sample_id": "50_81.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_81.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "fcec6acecd8e14484522e9a4922eec236b714d3aa914251f0917f49910e52518",
+      "expected_tensor_sha256": "2aaffa36bdaf519627a44e2c2bc2133719887e88f4a7bd1381abfae59516a15a",
+      "expected_desktop_u8u8_ml": 55.64849090576172
+    },
+    {
+      "index": 8,
+      "sample_id": "50_18.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_18.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "d58775127853bd20b77605a5e35d3ecc012dd2abf18eb5b65965567d53a3d104",
+      "expected_tensor_sha256": "e8de66b68bea06aa04634027b5fe6d70a71938b6d14c33375656fbb6ee3cf2e4",
+      "expected_desktop_u8u8_ml": 84.26771545410156
+    },
+    {
+      "index": 9,
+      "sample_id": "50_1.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_1.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "2646cd5ef2878c4381aec1e5119dda249cd964bd88edc551bbeb133f0f1fffe2",
+      "expected_tensor_sha256": "1bd87a7a38aa8e28f551b798da9963b3e2721231eb51a4e337c51670e18fa339",
+      "expected_desktop_u8u8_ml": 109.70702362060547
+    },
+    {
+      "index": 10,
+      "sample_id": "50_25.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_25.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "086ec8aaf395478d6e3e8091d6ab9acedf604b90f31f3bd328b4ea4db14944e4",
+      "expected_tensor_sha256": "b73552f28281d1dd08cfd3438f3cd27883abe8ede86550f766b60cd2481a658b",
+      "expected_desktop_u8u8_ml": 147.86599731445312
+    },
+    {
+      "index": 11,
+      "sample_id": "50_36.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_36.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "dca709d6c440e5c5c7bbfbdcca88808fd2e95eb3a7718b51330003d97626802d",
+      "expected_tensor_sha256": "572dc5dec97e18947369ac7dc60779ffee913ba77bdab067e54fc7789705d5d2",
+      "expected_desktop_u8u8_ml": 135.14633178710938
+    },
+    {
+      "index": 12,
+      "sample_id": "50_75.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_75.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "5548c6a95f2302bcf961d4703368670bb25b160e840f05637b43cd3bbbb9a23f",
+      "expected_tensor_sha256": "3dfa1a62d397084d3fc2c7facfac161c0a85159b36c0d21229e38ae199abff9b",
+      "expected_desktop_u8u8_ml": 39.74892044067383
+    },
+    {
+      "index": 13,
+      "sample_id": "50_39.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_39.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "2cf18303df86d1321fea99626f9b81f240fea6f7b911dc4c589a5ab1d457ce58",
+      "expected_tensor_sha256": "a2cd5a66ce67ddbc0ec94776ff8788ad100f6c017ddbba3b11d703250bff7131",
+      "expected_desktop_u8u8_ml": 146.27603149414062
+    },
+    {
+      "index": 14,
+      "sample_id": "50_90.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_90.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "4a7ae55abc56d234bc8194295442e3d81b052cd7c09934a108262dcc853eba39",
+      "expected_tensor_sha256": "dcfaff633783db323c8d4e77c10db73d6a7cd578df92a2d176bfab31ce284454",
+      "expected_desktop_u8u8_ml": 60.41836166381836
+    },
+    {
+      "index": 15,
+      "sample_id": "50_12.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_12.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "1bc51d1875d092c45b4f3020990cf5c77357c99c55778acb269285f0f38e08b8",
+      "expected_tensor_sha256": "f366158502decec99e53c253981e2e824a8f3c0c1c89054cf22e06bd8d22255c",
+      "expected_desktop_u8u8_ml": 81.08779907226562
+    },
+    {
+      "index": 16,
+      "sample_id": "50_78.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_78.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "7c1bef2333eb4ca1830b3d6b92d6f0579e94fdfc295fa85a6e6f4fbf08561c95",
+      "expected_tensor_sha256": "43fe99b19d2e359df79be43a9d2b24409efc52e4e132189c3514375065763b24",
+      "expected_desktop_u8u8_ml": 46.10874938964844
+    },
+    {
+      "index": 17,
+      "sample_id": "50_79.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_79.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "75dd3dc2a76a9e5b588b7be74ed45d0af92f895d971f68d981a39f3f03c99671",
+      "expected_tensor_sha256": "ba3f72c99113991bc5a8767e28017b3480e34e13974d0f954ed4a212099360b7",
+      "expected_desktop_u8u8_ml": 39.74892044067383
+    },
+    {
+      "index": 18,
+      "sample_id": "50_2.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_2.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "7847da28cb5e2ba28ccd3435e90f3896bf8d8dbe1fd60657f2a335f86c1346c0",
+      "expected_tensor_sha256": "6c01c5e56627e1eb58605eb6a02df1acc3982e1691b6f0ae772ce74f7455ab18",
+      "expected_desktop_u8u8_ml": 68.36814880371094
+    },
+    {
+      "index": 19,
+      "sample_id": "50_37.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 50.0,
+      "asset": "raw_rf_heldout/50_37.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "0555464dfe2ef1dcdae2ae1a583a31cd90aeb0e69c595c3cf8d44f35669a275a",
+      "expected_tensor_sha256": "3d43b19f278ffef95329d9481d4c73b30506cfaee1486116e3783a7c0810f198",
+      "expected_desktop_u8u8_ml": 116.06684875488281
+    },
+    {
+      "index": 20,
+      "sample_id": "150_84.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_84.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "f8e1dbda19f1f19f4426b38e875c2943a2de67bccade8485f7104efd83b3a026",
+      "expected_tensor_sha256": "d6864d109cda350143b876368502c6e7124d42f9db4a5abe0d59bbe9e1357dc6",
+      "expected_desktop_u8u8_ml": 119.24676513671875
+    },
+    {
+      "index": 21,
+      "sample_id": "150_57.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_57.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "01b4dc8a6745b685807ded42bd4d8868955579b72218ac10e07ea842691e30e3",
+      "expected_tensor_sha256": "6100732e25683558a56f58899085dde4e466495555bd944b9e24fde433b13e06",
+      "expected_desktop_u8u8_ml": 192.38478088378906
+    },
+    {
+      "index": 22,
+      "sample_id": "150_72.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_72.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "cee0f6ba58d9c6f9378ca0676e0787871042d7752a34a80bd9b12fb113d04c97",
+      "expected_tensor_sha256": "f1b9f6adb4b028364d06afe347c9e152ecef571f420d006e3d279e6de7c450a3",
+      "expected_desktop_u8u8_ml": 96.98737335205078
+    },
+    {
+      "index": 23,
+      "sample_id": "150_5.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_5.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "25739dc7d1d0efde4a7638b906bc13567441ac15b69f934d3c4451d3d4c49303",
+      "expected_tensor_sha256": "ce879202d04df5f4ace0c84e67ed71a819dc6fea6390d5ff033449405adb81b5",
+      "expected_desktop_u8u8_ml": 163.76556396484375
+    },
+    {
+      "index": 24,
+      "sample_id": "150_49.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_49.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "fff7cc5ca6d32741d37fb997caaae1053fdb428b2fab37eb1b1c51f582fd9a2a",
+      "expected_tensor_sha256": "82dad03fe31dd403706f98e69f1f066777032f6f7ee15b7981374a536822afd8",
+      "expected_desktop_u8u8_ml": 176.48521423339844
+    },
+    {
+      "index": 25,
+      "sample_id": "150_44.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_44.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "5c71b26738e6b71fd0b236c5da17ff1e78da951e7ed3274e39dba4d87a0936d6",
+      "expected_tensor_sha256": "5c449155a9bc5539c52bdcd1f3c9f9aca00722ae807e323dc4a25a8c8c2de454",
+      "expected_desktop_u8u8_ml": 189.20486450195312
+    },
+    {
+      "index": 26,
+      "sample_id": "150_29.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_29.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "48c555c7ae1549bb67a6815ddc0dee5b2452d6b8bd19b893e3fcec389f661bbd",
+      "expected_tensor_sha256": "0ba3c767fa7a22a792ace70dec1944557d100fb049f22cc0e74398385fdfaaaa",
+      "expected_desktop_u8u8_ml": 163.76556396484375
+    },
+    {
+      "index": 27,
+      "sample_id": "150_81.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_81.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "474b6a28f8c63b3fd04b528a4df3ea4bc825fcdda5d2e77f7b4f510b4b3c5a25",
+      "expected_tensor_sha256": "f8035184a24ee6e4f2a66cf8f3c9f3de4c1de44db6affc8528be2a8267471d88",
+      "expected_desktop_u8u8_ml": 111.29698181152344
+    },
+    {
+      "index": 28,
+      "sample_id": "150_18.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_18.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "1cd36b141d583a2e082a513debe6fca93ae550c2fc79cad951d96072dae3b794",
+      "expected_tensor_sha256": "9c6ff4ea8418fd19c6d9db5c563644660148ae15b4461907370d3620875bcacb",
+      "expected_desktop_u8u8_ml": 163.76556396484375
+    },
+    {
+      "index": 29,
+      "sample_id": "150_1.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_1.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "9bc65799f83233a290d4e453d3bda8f0ed330274de6429848eb18bcb9ebe5504",
+      "expected_tensor_sha256": "dac9790283d91391e27d40669464c1426da5ad5f9ec9ca9e92a7d5a84247b77d",
+      "expected_desktop_u8u8_ml": 131.96641540527344
+    },
+    {
+      "index": 30,
+      "sample_id": "150_25.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_25.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "6b337c1f07f189a7da92c4fc898c8b059c1a5bb1128b1492e200c90e52df7881",
+      "expected_tensor_sha256": "f5e712588e0abbaa79288d9c34448bca391315d8b27f86f440c79488e3fbd981",
+      "expected_desktop_u8u8_ml": 201.92453002929688
+    },
+    {
+      "index": 31,
+      "sample_id": "150_36.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_36.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "7476f4c62a477539aa95db2b5c15bb4e58bb18da266fe63829555f08425f52d2",
+      "expected_tensor_sha256": "08c827f3d11e522139d1811b76825b648a06b33680a17c2375b6ca778bc2a8b1",
+      "expected_desktop_u8u8_ml": 168.53543090820312
+    },
+    {
+      "index": 32,
+      "sample_id": "150_75.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_75.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "0240b7ed3fe76311de9cc2a6ae54c3f660ac18b75d9ea9ed73b880b82964abf1",
+      "expected_tensor_sha256": "e93bad6617f026ffbd2099a599094c282f8a06468f563c25c56ba55fa78d5504",
+      "expected_desktop_u8u8_ml": 222.59396362304688
+    },
+    {
+      "index": 33,
+      "sample_id": "150_39.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_39.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "c1d21a5deca575df96897327ceb410a1ac69345d7a865a8feb6ec55643ab4f89",
+      "expected_tensor_sha256": "3f7eef00293002ae98d2c0eaf5df187cdb267087751ed39c1c7563695e6452f2",
+      "expected_desktop_u8u8_ml": 143.0961151123047
+    },
+    {
+      "index": 34,
+      "sample_id": "150_90.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_90.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "dd0f7bd994143912ee99c3986fb34559130ff53a5f608158ef13311f0bf6f6b6",
+      "expected_tensor_sha256": "db540d9c10c0e079ec8b69eef3559662e4f81e11aa2860198bc815b6a018903e",
+      "expected_desktop_u8u8_ml": 206.69439697265625
+    },
+    {
+      "index": 35,
+      "sample_id": "150_12.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_12.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "c69f1d81e86ee7fcd82eae44478e809ec32701fd6f658a66a160aa623eb7f70f",
+      "expected_tensor_sha256": "a5a8ce4ca9bbe4c4fb2ccb57504f018af7f6cdf6bd7983e2e4bfd4a503b745e1",
+      "expected_desktop_u8u8_ml": 173.3052978515625
+    },
+    {
+      "index": 36,
+      "sample_id": "150_78.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_78.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "9a7514bffd579effa0afc2e76f43a88d92749ade368a749c897829090a202f08",
+      "expected_tensor_sha256": "11b136277a7cc2de819591e3e4833c14ca7d6efc8008097b66604717eb1108cf",
+      "expected_desktop_u8u8_ml": 141.50616455078125
+    },
+    {
+      "index": 37,
+      "sample_id": "150_79.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_79.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "b63a2171015651a873989bb4edc639af716b6828f7bff7099e3f90d30695b2c9",
+      "expected_tensor_sha256": "b907cb57318532c9a92e3db8533b4b3e286ac76b062ee8762e0827cf971886a9",
+      "expected_desktop_u8u8_ml": 186.0249481201172
+    },
+    {
+      "index": 38,
+      "sample_id": "150_2.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_2.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "ae1e47f9d1c976d63627252632d2ad3b3e47a0d063c0ee428922c6a921465f41",
+      "expected_tensor_sha256": "07622dc0010f7316819f3be17980cc0acd37a2b9b038b448968d99b4c60e0f0f",
+      "expected_desktop_u8u8_ml": 149.45594787597656
+    },
+    {
+      "index": 39,
+      "sample_id": "150_37.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 150.0,
+      "asset": "raw_rf_heldout/150_37.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "2dad4d0d72dc94477739afe8b09a348a93014eef50493072553af2adcc39de94",
+      "expected_tensor_sha256": "f4f671b46845bdf3ce9259816f8369be189fc21b3757626219fcefc78079d735",
+      "expected_desktop_u8u8_ml": 101.75724029541016
+    },
+    {
+      "index": 40,
+      "sample_id": "300_84.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_84.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "61db3c579d24e3e0afd930b36fc5c493493d672f9bb850a2c10b7110d0bcd403",
+      "expected_tensor_sha256": "9f640748f7452e375c5d2accc815dea5ea2b7bf6d505c0a681762377222c6a61",
+      "expected_desktop_u8u8_ml": 314.81146240234375
+    },
+    {
+      "index": 41,
+      "sample_id": "300_57.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_57.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "b526a39e7e2bb803910c6af5d60ab587bb7e136d7b5e1da574be9a9748dfa3e0",
+      "expected_tensor_sha256": "b54295295820927f6decbcb7f6769f1a6939eb115e4ac75b35274751f3be4e23",
+      "expected_desktop_u8u8_ml": 267.1127624511719
+    },
+    {
+      "index": 42,
+      "sample_id": "300_72.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_72.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "e37537744f3340e2942c1763159620dad45c16d4e906ed0a50674725ac226262",
+      "expected_tensor_sha256": "c5523b52a86985ec413347d27ade7d40225dae40c71608f990988555d7037a17",
+      "expected_desktop_u8u8_ml": 297.3219299316406
+    },
+    {
+      "index": 43,
+      "sample_id": "300_5.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_5.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "3fdd49d12a48e4587d3e3499fdc7bfd48d83ac162ee21c861c7bef5c4030cbb6",
+      "expected_tensor_sha256": "0fa3dc3fc4d791eab7492ad863b68c654d5a52c23f50703141d80b05904cc901",
+      "expected_desktop_u8u8_ml": 257.5730285644531
+    },
+    {
+      "index": 44,
+      "sample_id": "300_49.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_49.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "b9ff11e42ab9738a4c1177fb5a35c95c37986b39db503e2a7c7a85fc37a1705a",
+      "expected_tensor_sha256": "eaae8b24073d3f735c406963e4137ab678c16459ffd298c8415451c03927440d",
+      "expected_desktop_u8u8_ml": 325.941162109375
+    },
+    {
+      "index": 45,
+      "sample_id": "300_44.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_44.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "b2694989be3181883021c8452b8b61fa1c0fa7fc81d5e774a35651869f71fe6a",
+      "expected_tensor_sha256": "4db38521ef5cede672b3994983bddec5b77dfafb5a62d6b008858e0790cb08fb",
+      "expected_desktop_u8u8_ml": 255.98306274414062
+    },
+    {
+      "index": 46,
+      "sample_id": "300_29.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_29.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "bc774941a1035ecc0b2a90e9e462d1d423916ebecd0ec3dfd00a21dd19ce7778",
+      "expected_tensor_sha256": "0220acbe7a9bf2b3bb229d9deb26328d0b13be2dd0b7b7a4028c4d908bfcca6e",
+      "expected_desktop_u8u8_ml": 240.08349609375
+    },
+    {
+      "index": 47,
+      "sample_id": "300_81.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_81.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "abc89bb71225dec7dc0af63d19fc3206b1f50d3dcfcf1150b3de56cea0cf151a",
+      "expected_tensor_sha256": "40897728f658225012c5bdf1bcadb169f268334fcfcd7e3a8ffae01ce4139ed0",
+      "expected_desktop_u8u8_ml": 244.85336303710938
+    },
+    {
+      "index": 48,
+      "sample_id": "300_18.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_18.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "3df463ad01fe6395368e651ee6a9cd0835aa383848c13099890b21a8f629538d",
+      "expected_tensor_sha256": "dbab957f0631c78ae5d199bdbf4cc53763708a7e34b50fd7c506f2c545e24659",
+      "expected_desktop_u8u8_ml": 160.5856475830078
+    },
+    {
+      "index": 49,
+      "sample_id": "300_1.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_1.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "f187486ed9381846939b75b164f5fa5d50ff4d4d12be5f195715a14bae799270",
+      "expected_tensor_sha256": "760a70128a7679049a780f8454114bda0a3b73289959476a39d967d2ee0be858",
+      "expected_desktop_u8u8_ml": 213.05421447753906
+    },
+    {
+      "index": 50,
+      "sample_id": "300_25.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_25.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "5b2a6f5bf8275f3c3f9c0f09520956de9ce2bc80d8b02faa0b0ce0b0d01aae5c",
+      "expected_tensor_sha256": "22ca18b6dd9705a34ecf54d1485451f51010e968879288b97ef2a5cdb9a24078",
+      "expected_desktop_u8u8_ml": 232.13369750976562
+    },
+    {
+      "index": 51,
+      "sample_id": "300_36.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_36.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "e59cd13ed947ad5a5b7c3f007a9dd30e92cc978f1337164225de61e95228726c",
+      "expected_tensor_sha256": "0ffd40cd87e3cf4c88c5f3694b27020a9f4aaf02618bf9da92aa8a5e40834063",
+      "expected_desktop_u8u8_ml": 278.2424621582031
+    },
+    {
+      "index": 52,
+      "sample_id": "300_75.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_75.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "17fc877d1fe4024769aec7e48437c5da886ca69fd3f431c062a488bf04316cfe",
+      "expected_tensor_sha256": "d2a74900a26620eaf372d2de93ee963ddd2382b70bfd171e02e4dde1ea1b8fc2",
+      "expected_desktop_u8u8_ml": 289.3721618652344
+    },
+    {
+      "index": 53,
+      "sample_id": "300_39.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_39.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "43fc3f961126f33c4779b99b30ae0938ddeed0c0654b17f54e662df5e306f758",
+      "expected_tensor_sha256": "470b69889612b03b72e31d3570329957e80536aab1cc911b16c2ea7f26637b21",
+      "expected_desktop_u8u8_ml": 262.3428955078125
+    },
+    {
+      "index": 54,
+      "sample_id": "300_90.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_90.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "616b2d959a3d1043af913aa9dfe5e307b33a1496b1f4726b3af0d60c9782258d",
+      "expected_tensor_sha256": "d879c64b10a5da1f85c86d0d562d7b1128e7273876e6cfbe8eacb9d95421e801",
+      "expected_desktop_u8u8_ml": 233.72366333007812
+    },
+    {
+      "index": 55,
+      "sample_id": "300_12.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_12.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "191ae5021531732d87dca47ae374c57a5160c466dcbc854257bf415e7f971b3b",
+      "expected_tensor_sha256": "c9feeda6fb271420dcfc95c72555ff6e82d0a1ea22c528153aa2da54fb683400",
+      "expected_desktop_u8u8_ml": 143.0961151123047
+    },
+    {
+      "index": 56,
+      "sample_id": "300_78.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_78.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "09586f6fd9c1ee270cadc346cd813cd8f7bdc2172722d038e43792c1021b9411",
+      "expected_tensor_sha256": "7e4133ad689058e52b716c717901d065a1886ad18b43e2bc2c7efd9d05f3b603",
+      "expected_desktop_u8u8_ml": 270.29266357421875
+    },
+    {
+      "index": 57,
+      "sample_id": "300_79.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_79.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "ddb23bf3d3f6ca1172a0174969c8ac91f130adf998660834a4fb2e856ffee006",
+      "expected_tensor_sha256": "6a242f4cad52fd1d3345177bed382bd82a1daf3067eb522e886a932aa4b4639b",
+      "expected_desktop_u8u8_ml": 306.8616638183594
+    },
+    {
+      "index": 58,
+      "sample_id": "300_2.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_2.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "36d07dbce790839dff9e2313ef79fd4fa0fa7782bf81bdda40530ec5076a4c98",
+      "expected_tensor_sha256": "e365dd1e09f8eccfa24c6866a5b57e7d71bb7dc63340f69d43ec4fde46a3de13",
+      "expected_desktop_u8u8_ml": 151.0458984375
+    },
+    {
+      "index": 59,
+      "sample_id": "300_37.txt",
+      "partition": "held-out wearable test",
+      "target_ml": 300.0,
+      "asset": "raw_rf_heldout/300_37.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "raw_sha256": "f1de2d3ab5912e58aa3fa3eefe96fc79e7d6f81f7dfabf0108655d6361be9ded",
+      "expected_tensor_sha256": "8f788091ba344bf72d3d555f303398412314eafc1a9c0227730521eb30e0d373",
+      "expected_desktop_u8u8_ml": 222.59396362304688
+    }
+  ]
+}

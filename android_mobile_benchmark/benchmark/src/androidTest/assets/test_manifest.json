@@ -1,0 +1,392 @@
+{
+  "format_version": 2,
+  "dtype": "float32-little-endian",
+  "shape": [
+    60,
+    7,
+    400
+  ],
+  "sample_shape": [
+    7,
+    400
+  ],
+  "channel_order": [
+    "H_physical_left",
+    "H_virtual_mean_S2_S3",
+    "H_physical_right",
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ],
+  "partition": "held-out wearable test",
+  "deployment_seed": 3,
+  "checkpoint_sha256": "ba9e8bd59b8eeb14ea09cbb2fbd613fad4490699064c25e8d882681d04ce2572",
+  "model_format": "ONNX static 8-bit QDQ QUINT8/QUINT8",
+  "activation_type": "quint8",
+  "weight_type": "quint8",
+  "model_sha256": "f473b9b8b4a745a9d7579896619af063d2e9cabfaad71fd699728837073a684e",
+  "inputs_sha256": "a5c17c07419f61f0c552ba310e0fca60ff21a00bb2215a2fdbf8b39846e8c5b7",
+  "samples": [
+    {
+      "index": 0,
+      "sample_id": "50_84.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 49.28866195678711
+    },
+    {
+      "index": 1,
+      "sample_id": "50_57.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 46.10874938964844
+    },
+    {
+      "index": 2,
+      "sample_id": "50_72.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 76.31793212890625
+    },
+    {
+      "index": 3,
+      "sample_id": "50_5.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 96.98737335205078
+    },
+    {
+      "index": 4,
+      "sample_id": "50_49.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 181.2550811767578
+    },
+    {
+      "index": 5,
+      "sample_id": "50_44.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 106.52710723876953
+    },
+    {
+      "index": 6,
+      "sample_id": "50_29.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 108.1170654296875
+    },
+    {
+      "index": 7,
+      "sample_id": "50_81.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 55.64849090576172
+    },
+    {
+      "index": 8,
+      "sample_id": "50_18.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 84.26771545410156
+    },
+    {
+      "index": 9,
+      "sample_id": "50_1.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 109.70702362060547
+    },
+    {
+      "index": 10,
+      "sample_id": "50_25.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 147.86599731445312
+    },
+    {
+      "index": 11,
+      "sample_id": "50_36.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 135.14633178710938
+    },
+    {
+      "index": 12,
+      "sample_id": "50_75.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 39.74892044067383
+    },
+    {
+      "index": 13,
+      "sample_id": "50_39.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 146.27603149414062
+    },
+    {
+      "index": 14,
+      "sample_id": "50_90.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 60.41836166381836
+    },
+    {
+      "index": 15,
+      "sample_id": "50_12.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 81.08779907226562
+    },
+    {
+      "index": 16,
+      "sample_id": "50_78.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 46.10874938964844
+    },
+    {
+      "index": 17,
+      "sample_id": "50_79.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 39.74892044067383
+    },
+    {
+      "index": 18,
+      "sample_id": "50_2.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 68.36814880371094
+    },
+    {
+      "index": 19,
+      "sample_id": "50_37.txt",
+      "target_ml": 50.0,
+      "desktop_8bit_ml": 116.06684875488281
+    },
+    {
+      "index": 20,
+      "sample_id": "150_84.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 119.24676513671875
+    },
+    {
+      "index": 21,
+      "sample_id": "150_57.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 192.38478088378906
+    },
+    {
+      "index": 22,
+      "sample_id": "150_72.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 96.98737335205078
+    },
+    {
+      "index": 23,
+      "sample_id": "150_5.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 163.76556396484375
+    },
+    {
+      "index": 24,
+      "sample_id": "150_49.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 176.48521423339844
+    },
+    {
+      "index": 25,
+      "sample_id": "150_44.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 189.20486450195312
+    },
+    {
+      "index": 26,
+      "sample_id": "150_29.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 163.76556396484375
+    },
+    {
+      "index": 27,
+      "sample_id": "150_81.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 111.29698181152344
+    },
+    {
+      "index": 28,
+      "sample_id": "150_18.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 163.76556396484375
+    },
+    {
+      "index": 29,
+      "sample_id": "150_1.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 131.96641540527344
+    },
+    {
+      "index": 30,
+      "sample_id": "150_25.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 201.92453002929688
+    },
+    {
+      "index": 31,
+      "sample_id": "150_36.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 168.53543090820312
+    },
+    {
+      "index": 32,
+      "sample_id": "150_75.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 222.59396362304688
+    },
+    {
+      "index": 33,
+      "sample_id": "150_39.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 143.0961151123047
+    },
+    {
+      "index": 34,
+      "sample_id": "150_90.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 206.69439697265625
+    },
+    {
+      "index": 35,
+      "sample_id": "150_12.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 173.3052978515625
+    },
+    {
+      "index": 36,
+      "sample_id": "150_78.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 141.50616455078125
+    },
+    {
+      "index": 37,
+      "sample_id": "150_79.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 186.0249481201172
+    },
+    {
+      "index": 38,
+      "sample_id": "150_2.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 149.45594787597656
+    },
+    {
+      "index": 39,
+      "sample_id": "150_37.txt",
+      "target_ml": 150.0,
+      "desktop_8bit_ml": 101.75724029541016
+    },
+    {
+      "index": 40,
+      "sample_id": "300_84.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 314.81146240234375
+    },
+    {
+      "index": 41,
+      "sample_id": "300_57.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 267.1127624511719
+    },
+    {
+      "index": 42,
+      "sample_id": "300_72.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 297.3219299316406
+    },
+    {
+      "index": 43,
+      "sample_id": "300_5.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 257.5730285644531
+    },
+    {
+      "index": 44,
+      "sample_id": "300_49.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 325.941162109375
+    },
+    {
+      "index": 45,
+      "sample_id": "300_44.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 255.98306274414062
+    },
+    {
+      "index": 46,
+      "sample_id": "300_29.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 240.08349609375
+    },
+    {
+      "index": 47,
+      "sample_id": "300_81.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 244.85336303710938
+    },
+    {
+      "index": 48,
+      "sample_id": "300_18.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 160.5856475830078
+    },
+    {
+      "index": 49,
+      "sample_id": "300_1.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 213.05421447753906
+    },
+    {
+      "index": 50,
+      "sample_id": "300_25.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 232.13369750976562
+    },
+    {
+      "index": 51,
+      "sample_id": "300_36.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 278.2424621582031
+    },
+    {
+      "index": 52,
+      "sample_id": "300_75.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 289.3721618652344
+    },
+    {
+      "index": 53,
+      "sample_id": "300_39.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 262.3428955078125
+    },
+    {
+      "index": 54,
+      "sample_id": "300_90.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 233.72366333007812
+    },
+    {
+      "index": 55,
+      "sample_id": "300_12.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 143.0961151123047
+    },
+    {
+      "index": 56,
+      "sample_id": "300_78.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 270.29266357421875
+    },
+    {
+      "index": 57,
+      "sample_id": "300_79.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 306.8616638183594
+    },
+    {
+      "index": 58,
+      "sample_id": "300_2.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 151.0458984375
+    },
+    {
+      "index": 59,
+      "sample_id": "300_37.txt",
+      "target_ml": 300.0,
+      "desktop_8bit_ml": 222.59396362304688
+    }
+  ]
+}

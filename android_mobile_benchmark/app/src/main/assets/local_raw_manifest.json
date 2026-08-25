@@ -1,0 +1,59 @@
+{
+  "format_version": 1,
+  "partition": "wearable validation only",
+  "held_out_test_used": false,
+  "physical_channel_order": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "H_left",
+    "H_right"
+  ],
+  "shape_per_sample": [
+    6,
+    5120
+  ],
+  "dtype": "float32-little-endian",
+  "samples": [
+    {
+      "sample_id": "50_30.txt",
+      "partition": "wearable validation",
+      "target_ml": 50.0,
+      "asset": "raw_rf_validation/50_30.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "sha256": "f27204401ae299b53c1d61fa2b73bb43d69e487a6ed8a688543ffac984b8e1c9",
+      "expected_u8u8_ml": 124.01663970947266
+    },
+    {
+      "sample_id": "150_30.txt",
+      "partition": "wearable validation",
+      "target_ml": 150.0,
+      "asset": "raw_rf_validation/150_30.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "sha256": "d787428044c6c26f6fba4ef3be165b3bf002aac9f046f2ed0be9dd66a54b0f2a",
+      "expected_u8u8_ml": 171.71534729003906
+    },
+    {
+      "sample_id": "300_30.txt",
+      "partition": "wearable validation",
+      "target_ml": 300.0,
+      "asset": "raw_rf_validation/300_30.f32le.bin",
+      "shape": [
+        6,
+        5120
+      ],
+      "dtype": "float32-little-endian",
+      "sha256": "0572821704284a1289ac11a8ec2c4269d31825a15e4d26b35b3be37a428a0dea",
+      "expected_u8u8_ml": 143.0961151123047
+    }
+  ]
+}

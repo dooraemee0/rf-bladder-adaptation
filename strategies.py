@@ -386,7 +386,11 @@ def train_der_plus_plus(model, data, cfg):
         sched.step()
         if _should_eval(ep, cfg.epochs):
             evaluate_and_select_best(model, data, best, ep, "der++", mode="sum")
-    return restore_best(model, best, "der++")
+    model = restore_best(model, best, "der++")
+    model._validation_selection = {
+        key: value for key, value in best.items() if key != "state"
+    }
+    return model
 
 
 # ===========================================================================

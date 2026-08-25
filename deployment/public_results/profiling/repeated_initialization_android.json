@@ -1,0 +1,97 @@
+{
+  "scope": "Repeated fresh OrtSession initialization within one instrumentation process",
+  "true_process_cold_start_measured": false,
+  "clock": "SystemClock.elapsedRealtimeNanos",
+  "iterations": [
+    {
+      "iteration": 1,
+      "environment_acquisition_ms": 92.540923,
+      "model_asset_read_ms": 111.165961,
+      "session_options_ms": 0.370653,
+      "session_create_ms": 82.331615,
+      "input_asset_decode_and_tensor_create_ms": 4.339923,
+      "total_initialization_ms": 290.770153
+    },
+    {
+      "iteration": 2,
+      "environment_acquisition_ms": 0.005884,
+      "model_asset_read_ms": 72.991461,
+      "session_options_ms": 0.076577,
+      "session_create_ms": 63.516846,
+      "input_asset_decode_and_tensor_create_ms": 0.433461,
+      "total_initialization_ms": 137.038038
+    },
+    {
+      "iteration": 3,
+      "environment_acquisition_ms": 0.005693,
+      "model_asset_read_ms": 72.032961,
+      "session_options_ms": 0.074693,
+      "session_create_ms": 63.797231,
+      "input_asset_decode_and_tensor_create_ms": 0.408077,
+      "total_initialization_ms": 136.33377
+    },
+    {
+      "iteration": 4,
+      "environment_acquisition_ms": 0.006,
+      "model_asset_read_ms": 72.81,
+      "session_options_ms": 0.071769,
+      "session_create_ms": 64.897692,
+      "input_asset_decode_and_tensor_create_ms": 0.409731,
+      "total_initialization_ms": 138.208923
+    },
+    {
+      "iteration": 5,
+      "environment_acquisition_ms": 0.006039,
+      "model_asset_read_ms": 72.26623,
+      "session_options_ms": 0.074539,
+      "session_create_ms": 62.751115,
+      "input_asset_decode_and_tensor_create_ms": 0.417385,
+      "total_initialization_ms": 135.530462
+    },
+    {
+      "iteration": 6,
+      "environment_acquisition_ms": 0.005462,
+      "model_asset_read_ms": 71.533961,
+      "session_options_ms": 0.074462,
+      "session_create_ms": 62.678153,
+      "input_asset_decode_and_tensor_create_ms": 0.422615,
+      "total_initialization_ms": 134.728269
+    },
+    {
+      "iteration": 7,
+      "environment_acquisition_ms": 0.005615,
+      "model_asset_read_ms": 71.913769,
+      "session_options_ms": 0.07523,
+      "session_create_ms": 65.132846,
+      "input_asset_decode_and_tensor_create_ms": 0.419115,
+      "total_initialization_ms": 137.559115
+    },
+    {
+      "iteration": 8,
+      "environment_acquisition_ms": 0.006884,
+      "model_asset_read_ms": 72.714692,
+      "session_options_ms": 0.075346,
+      "session_create_ms": 63.355769,
+      "input_asset_decode_and_tensor_create_ms": 0.420115,
+      "total_initialization_ms": 136.5845
+    },
+    {
+      "iteration": 9,
+      "environment_acquisition_ms": 0.005153,
+      "model_asset_read_ms": 75.01127,
+      "session_options_ms": 0.067115,
+      "session_create_ms": 67.415461,
+      "input_asset_decode_and_tensor_create_ms": 0.422924,
+      "total_initialization_ms": 142.9355
+    },
+    {
+      "iteration": 10,
+      "environment_acquisition_ms": 0.006,
+      "model_asset_read_ms": 70.760654,
+      "session_options_ms": 0.074615,
+      "session_create_ms": 65.347885,
+      "input_asset_decode_and_tensor_create_ms": 0.418116,
+      "total_initialization_ms": 136.619846
+    }
+  ]
+}

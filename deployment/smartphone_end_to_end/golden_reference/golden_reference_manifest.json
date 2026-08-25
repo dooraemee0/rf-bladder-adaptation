@@ -1,0 +1,68 @@
+{
+  "format_version": 1,
+  "partition": "wearable validation only",
+  "held_out_test_used": false,
+  "sample_ids": [
+    "50_30.txt",
+    "150_30.txt",
+    "300_30.txt"
+  ],
+  "validation_partition_size": 48,
+  "full_validation_reconstruction": {
+    "compared_samples": 48,
+    "bitwise_equal": true,
+    "max_absolute_difference": 0.0
+  },
+  "models": {
+    "fp32": {
+      "path": "<NOT_DISTRIBUTED_FP32_MODEL>",
+      "sha256": "23f46e08bc3c60ce91ce323ce7135bf54cbfd53a26c29d3ae2e7fed4fb662a59",
+      "size_bytes": 26023004
+    },
+    "u8u8": {
+      "path": "release_assets/onnx/derpp_seed3_u8u8_qdq.onnx",
+      "sha256": "f473b9b8b4a745a9d7579896619af063d2e9cabfaad71fd699728837073a684e",
+      "size_bytes": 6651648
+    }
+  },
+  "runtime": {
+    "python": "3.10.16",
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "numpy": "2.1.2",
+    "scipy": "1.15.1",
+    "onnxruntime": "1.23.2",
+    "providers": [
+      "AzureExecutionProvider",
+      "CPUExecutionProvider"
+    ]
+  },
+  "samples": [
+    {
+      "sample_id": "50_30.txt",
+      "target_ml": 50.0,
+      "manifest": "50_30/sample_manifest.json",
+      "predictions_ml": {
+        "fp32": 127.20201110839844,
+        "u8u8": 124.01663970947266
+      }
+    },
+    {
+      "sample_id": "150_30.txt",
+      "target_ml": 150.0,
+      "manifest": "150_30/sample_manifest.json",
+      "predictions_ml": {
+        "fp32": 179.62091064453125,
+        "u8u8": 171.71534729003906
+      }
+    },
+    {
+      "sample_id": "300_30.txt",
+      "target_ml": 300.0,
+      "manifest": "300_30/sample_manifest.json",
+      "predictions_ml": {
+        "fp32": 148.83082580566406,
+        "u8u8": 143.0961151123047
+      }
+    }
+  ]
+}
