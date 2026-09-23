@@ -92,7 +92,6 @@ The raw phantom assets used for the recorded run are not distributed in the Git
 repository pending a separate data-distribution review. Supply authorized assets
 under the paths named by `local_raw_manifest.json` before repeating those tests.
 
-The recorded three-session summaries were 14.277 ms for preprocessing and
-39.202 ms for raw-RF-to-scalar-volume by median-of-session-medians. These values
-exclude live RF acquisition, BLE transport, network transport, and screen
-rendering.
+The paper-facing pooled medians were 14.33 ms for preprocessing and 39.23 ms
+for raw-RF-to-scalar-volume. These values exclude live RF acquisition, BLE
+transport, network transport, initialization, and screen rendering.

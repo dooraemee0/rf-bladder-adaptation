@@ -13,6 +13,8 @@ nohup_*.out
 checkpoints/
 deployment/artifacts/
 deployment/envelope_ablation_run/
+deployment/DEPLOYMENT_MODEL_SELECTION.md
+deployment/RESULTS_ALL_SEEDS.md
 android_mobile_benchmark/app/src/main/assets/*.onnx
 android_mobile_benchmark/app/src/main/assets/*.bin
 android_mobile_benchmark/benchmark/src/androidTest/assets/*.onnx
